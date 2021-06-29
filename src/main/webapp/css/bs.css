@@ -1,0 +1,33 @@
+
+.accordion {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+}
+.badge{
+    color: azure;
+    background-color:lightskyblue;
+}
+#ban{
+    color: #fdf9d9;
+    background-color: #ac3a31;
+}
+
+.contentContainer{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+
+body{
+    height: 100%;
+}
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
