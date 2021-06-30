@@ -48,6 +48,16 @@
     <servlet-name>EditAdmin</servlet-name>
     <url-pattern>/admin/edit</url-pattern>
   </servlet-mapping>
+  <!--////////////////////EDIT_USERS//////////////////////////-->
+  <servlet>
+    <servlet-name>EditUsers</servlet-name>
+    <servlet-class>EditUsers</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditUsers</servlet-name>
+    <url-pattern>/admin/user</url-pattern>
+  </servlet-mapping>
   <!--////////////////////ERROR_PAGES//////////////////////////-->
   <error-page>
     <error-code>404</error-code>
@@ -67,7 +77,7 @@
     <servlet-name>Hello</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
-  <!--////////////////////TO_JSP//////////////////////////-->
+  <!--////////////////////FILTERS//////////////////////////-->
   <filter>
     <filter-name>FilterA</filter-name>
     <filter-class>FilterA</filter-class>

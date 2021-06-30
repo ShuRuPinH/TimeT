@@ -41,6 +41,7 @@ public enum DataBase {
                 notes =new ArrayList<>();
                 somethingMatter = new HashMap();
                 admin = false;
+                block=false;
             }
 
 
@@ -113,6 +114,14 @@ public enum DataBase {
 
         @Override
         public String getKey(User elem) { return elem.login; }
+
+        public User getUser (String login){
+           for(User u:  INSTANCE.users.getAll()){
+               if (u.getLogin().equals(login))
+                   return u;
+           }
+           return null;
+        }
     }
 
 

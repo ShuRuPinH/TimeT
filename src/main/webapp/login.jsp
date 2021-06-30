@@ -73,7 +73,7 @@
 
 
 
-<script src="dig.js">
+<script src="JS/dig.js">
 
 </script>
 </body>

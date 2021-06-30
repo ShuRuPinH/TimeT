@@ -8,6 +8,6 @@
 
 
 
-<script src="dig.js"></script>
+<script src="JS/dig.js"></script>
 </body>
 </html>

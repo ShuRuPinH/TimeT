@@ -28,8 +28,11 @@
         </div>
     </div>
 <c:forEach var="user" items="${users}">
+
+<form id="${user.login}" method="post" action="/admin/user">
 <div  class="row">
     <div class="col-md-3">
+        <input id="_login_" name="login" type="hidden" value="${user.login}">
         <h5 class="">${user.login}
                 <c:if test="${user.admin}">
                     <c:out value="<span  class=\"badge\">Admin</span></h5>"  escapeXml="false"/>
@@ -48,16 +51,19 @@
                 Действия
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><button class="dropdown-item" >Забанить / Разбанить</button></li>
-                <li><button class="dropdown-item" >Редактировать</button></li>
-                <li><button class="dropdown-item" >Войти под Юзером</button></li>
+                <li><button name="ban_edt_ent_del" value="0" type="submit" class="dropdown-item" >Забанить / Разбанить</button></li>
+                <li><button name="ban_edt_ent_del" value="1" type="submit"   class="dropdown-item" >Редактировать</button></li>
+                <li><button name="ban_edt_ent_del" value="2" type="submit"  class="dropdown-item" >Войти под Юзером</button></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><button class="dropdown-item" >Удалить</button></li>
+                <li><button name="ban_edt_ent_del" value="3" type="submit" onclick="conf(`${user.login}`)" class="dropdown-item" >Удалить</button></li>
+
             </ul>
         </div>
     </div>
     <hr>
 </div>
+</form>
+
 </c:forEach>
 
 </div>
@@ -118,7 +124,7 @@
     <hr>
 
     <c:forEach var="set" items="${sets}">
-    <form name="${set.name}" method="POST"  action="/admin/edit">
+    <form id="${set.name}" method="POST" action="/admin/edit">
         <div style="margin-bottom: 5px; padding-top: 5px" class="row">
 
                 <div class="col-md-2">
@@ -143,7 +149,7 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><button class="dropdown-item" name="add_edt_del" value="1" type="submit" >Редактировать</button></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><button class="dropdown-item" name="add_edt_del" value="2" type="submit" >Удалить</button></li>
+                            <li><button class="dropdown-item" name="add_edt_del" value="2" type="submit" onclick="conf(`${set.name}`)">Удалить</button></li>
                         </ul>
                     </div>
                 </div>
@@ -153,5 +159,7 @@
 
     </c:forEach>
 </div>
+
+<script src="JS/edit.js"></script>
 </body>
 </html>
