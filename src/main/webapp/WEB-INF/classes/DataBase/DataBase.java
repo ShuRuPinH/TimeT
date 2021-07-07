@@ -17,11 +17,13 @@ public enum DataBase {
     public static class Users extends AbstractDbTable<String, Users.User> {
         public static class User {
             public final String login;
-            public final String password;
+            public  String password;
             public  List <String> sesions;
             public  List <String> notes;
             public  boolean admin;
             public  boolean block;
+            public  Map  somethingMatter;
+
 
             public boolean getBlock() {
                 return block;
@@ -30,9 +32,6 @@ public enum DataBase {
             public void setBlock(boolean block) {
                 this.block = block;
             }
-
-            public  Map  somethingMatter;
-
 
             public User(String login, String password) {
                 this.login = login;
@@ -132,19 +131,25 @@ public enum DataBase {
             public final String name;
             public final String description;
             public final int value;
+            public final boolean system;
 
 
 
-            public Record(String name, String description, int value) {
+            public Record(String name, String description, int value,boolean system) {
                 this.name = name;
                 this.description = description;
                 this.value = value;
+               this.system=system;
             }
             public int getValue() {
                 return value;
             }
             public String getName() {
                 return name;
+            }
+
+            public boolean getSystem() {
+                return system;
             }
 
             public String getDescription() {
@@ -161,6 +166,15 @@ public enum DataBase {
 
         @Override
         public String getKey(Record elem) { return elem.name; }
+
+        public Record getRecord(String name){
+            for(Record r: INSTANCE.settings.getAll() ){
+                if (r.getName().equals(name))
+                    return r;
+
+            }
+            return null;
+        }
     }
 
 

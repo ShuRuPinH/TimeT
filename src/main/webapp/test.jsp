@@ -22,9 +22,9 @@ ${in}
 ////////////////////////
 
 <form method="post" action="test">
-    <input placeholder="cookie" type="text" name="cookie">
+    <input placeholder="attr" type="text" name="name">
     <input placeholder="val" type="text" name="val">
-    <input placeholder="domain" type="text" name="domain">
+
     <input type="submit">
 
 </form>
@@ -39,6 +39,20 @@ ${arz}<br>
 <br>
 
 ${sessionScope}
+<form action="/admin" method="post">
+    <input type="text" name="data" value="mydata" />
+    <input type="submit" />
+</form>
+
+<hr>
+<hr>
+
+<% String clas = this.getClass().toString();
+
+%>
+
+<h4> Class = <%=clas%> </h4>
+
 
 </body>
 </html>

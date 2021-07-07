@@ -38,6 +38,9 @@
 
     </tbody>
 </table>
+<div class="d-grid gap-2 col-6 mx-auto"><br><br>
+    <button class="btn btn-dark" onclick="history.back()" type="button">Н А З А Д</button>
 
+</div>
 </body>
 </html>

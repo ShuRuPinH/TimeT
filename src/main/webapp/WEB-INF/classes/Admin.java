@@ -23,7 +23,9 @@ public class Admin extends HttpServlet {
         HttpSession session = req.getSession();
 
 
-        session.setAttribute("logined", "admin");
+        String hashAuth = IDbTable.hashSha256(session.getCreationTime()+"admin"+session.getId());
+
+        session.setAttribute("logined", hashAuth);
         session.setMaxInactiveInterval(120); ///  !!!!!!!!
         ///////////
 

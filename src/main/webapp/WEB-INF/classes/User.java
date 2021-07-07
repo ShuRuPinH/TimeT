@@ -21,13 +21,14 @@ public class User extends HttpServlet {
 
         // todo sesion ang cookie
         HttpSession session = req.getSession();
-          session.setAttribute("logined", user);
+
+        String hashAuth = IDbTable.hashSha256(session.getCreationTime()+user+session.getId());
+          session.setAttribute("logined", hashAuth);
         session.setMaxInactiveInterval(120); ///  !!!!!!!!
         ///////////
 
 
-        req.setAttribute("users",INSTANCE.users.getAll());
-        req.setAttribute("sets",INSTANCE.settings.getAll());
+
         resp.getWriter().println("  POST /User/   ---");
        req.getRequestDispatcher("lk_user.jsp").forward(req,resp);
     }

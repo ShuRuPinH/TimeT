@@ -1,5 +1,6 @@
 import DataBase.DataBase;
 import DataBase.IDbTable;
+import com.sun.security.auth.module.UnixLoginModule;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
@@ -26,15 +27,21 @@ public class Check extends HttpServlet {
 
 
 if (session.getAttribute("logined")!=null && request.getParameter("auth")==null) {
-    String role =(String) session.getAttribute("logined");
-    System.out.println(" auth = "+request.getParameter("auth"));
-    switch (role){
-        case "admin": request.getRequestDispatcher("/admin").forward(request,response);return;
-        default:
-            request.setAttribute("user", role);
-            request.getRequestDispatcher("/user").forward(request,response);return;
-    }
+    String user = (String) request.getAttribute("user");
+    String hashA =(String) session.getAttribute("logined");
+  //  System.out.println(" auth = "+request.getParameter("auth"));
 
+    String hashAdmin = IDbTable.hashSha256(session.getCreationTime()+"admin"+session.getId());
+
+
+    if (hashA.equals(hashAdmin)){
+        request.getRequestDispatcher("/admin").forward(request,response);return;}
+    else if (user!= null){
+        String hashUser = IDbTable.hashSha256(session.getCreationTime()+user+session.getId());
+       if (hashA.equals(hashUser)){
+            request.setAttribute("user", user);
+            request.getRequestDispatcher("/user").forward(request,response);return;}
+    }
 }
 
 

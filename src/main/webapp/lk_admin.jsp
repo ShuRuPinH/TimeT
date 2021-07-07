@@ -29,18 +29,18 @@
     </div>
 <c:forEach var="user" items="${users}">
 
-<form id="${user.login}" method="post" action="/admin/user">
+<form id="${user.login}" method="post" action="/admin_users">
 <div  class="row">
     <div class="col-md-3">
         <input id="_login_" name="login" type="hidden" value="${user.login}">
         <h5 class="">${user.login}
                 <c:if test="${user.admin}">
-                    <c:out value="<span  class=\"badge\">Admin</span></h5>"  escapeXml="false"/>
+                    <c:out value="<span  class=\"badge\">Admin</span>"  escapeXml="false"/>
                 </c:if>
 
             <c:if test="${user.block}">
-                <c:out value="<span id=\"ban\" class=\"badge\">blocked</span></h5>"  escapeXml="false"/>
-            </c:if>
+                <c:out value="<span id=\"ban\" class=\"badge\">blocked</span>"  escapeXml="false"/>
+            </c:if></h5>
     </div>
     <div class="col-md-7">
         <p class="lead">Последний визит ${user.getLastSesion()}</p>
@@ -73,6 +73,7 @@
         <hr>
         <h4>Настроки приложения.</h4>
         <p class="lead text-primary">Изменить, добавить или удалить параметр приложения.</p>
+        <p class="text-danger"><b> * Только латинские символы</b></p>
     </div>
 </div>
 <div class="contentContainer">
@@ -94,7 +95,7 @@
             <h5 style="color: white" class="">Действия</h5>
         </div>
     </div>
-    <form name="new_set" method="POST"  action="/admin/edit">
+    <form name="new_set" method="POST" accept-charset="UTF-8" action="/admin_edit">
     <div style="background-color: darkorange ;margin-bottom: 5px; padding-top: 10px" class="row">
 
         <div class="col-md-2">
@@ -105,14 +106,14 @@
             <h5  class=""><input name="description" style="width: 80%" placeholder="описание паметра с ед. имерения"></h5>
         </div>
         <div class="col-md-1">
-            <h5  class="">Текущее значение</h5>
+            <h5  class="">  </h5>
         </div>
         <div class="col-md-2">
             <h5  class=""><input style="width: 80%" type="number" name="value" value="0" placeholder="значение"></h5>
         </div>
         <div class="col-md-2">
             <div class="dropdown">
-                <button class="btn btn-warning " name="add_edt_del" value="0"  type="submit" id="dropdownMenuButton2" >
+                <button style="margin-bottom: 5px" class="btn btn-warning " name="add_edt_del" value="0"  type="submit" id="dropdownMenuButton2" >
                     Добавить
                 </button>
 
@@ -124,11 +125,14 @@
     <hr>
 
     <c:forEach var="set" items="${sets}">
-    <form id="${set.name}" method="POST" action="/admin/edit">
+    <form id="${set.name}" method="POST" action="/admin_edit">
         <div style="margin-bottom: 5px; padding-top: 5px" class="row">
 
                 <div class="col-md-2">
-                    <h5 class="">${set.name}</h5>
+                    <h5 class="">${set.name}
+                    <c:if test="${set.system}">
+                    <c:out value="<span id=\"system\" class=\"badge\">system</span>"  escapeXml="false"/>
+                </c:if></h5>
                     <input name="name" type="hidden" value="${set.name}">
                 </div>
                 <div class="col-md-5">
@@ -149,7 +153,7 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><button class="dropdown-item" name="add_edt_del" value="1" type="submit" >Редактировать</button></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><button class="dropdown-item" name="add_edt_del" value="2" type="submit" onclick="conf(`${set.name}`)">Удалить</button></li>
+                            <li><button class="dropdown-item" name="add_edt_del" onclick="conf(`${set.name}`)" value="2" type="submit">Удалить</button></li>
                         </ul>
                     </div>
                 </div>

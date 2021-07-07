@@ -12,6 +12,9 @@ public class EditAdmin extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html");
+        resp.setCharacterEncoding("UTF-8");
+
      String name=   req.getParameter("name");
      String description =   req.getParameter("description");
      Integer value = Integer.valueOf(req.getParameter("value"));
@@ -26,14 +29,15 @@ public class EditAdmin extends HttpServlet {
                  return;
              }
 
-             INSTANCE.settings.put(new DataBase.Settings.Record(name,description,value));
+             INSTANCE.settings.put(new DataBase.Settings.Record(name,description,value,false));
              redirect(resp);
              break;
          }
          case "1":{
+             Boolean tmp=INSTANCE.settings.getRecord(name).getSystem();
              DataBase.INSTANCE.settings.remove(name);
 
-             if (! INSTANCE.settings.put(new DataBase.Settings.Record(name,description,value))){
+             if (! INSTANCE.settings.put(new DataBase.Settings.Record(name,description,value,tmp))){
                  req.setAttribute("error", "Не удалось добавить настройку. Вероятно, она уже существует.");
                  req.setAttribute("er_type","Ошибка добавления параметра");
                  req.getRequestDispatcher("/gen_error.jsp").forward(req, resp);
@@ -43,6 +47,13 @@ public class EditAdmin extends HttpServlet {
              break;
          }
          case "2":{
+             if(INSTANCE.settings.getRecord(name).getSystem()){
+                 req.setAttribute("error", "Системную настройку удалить нельзя.");
+                 req.setAttribute("er_type","Ошибка удаления парамерта");
+                 req.getRequestDispatcher("/gen_error.jsp").forward(req, resp);
+                 break;
+             }
+
              if (DataBase.INSTANCE.settings.remove(name)==null){
                  req.setAttribute("error", "Не удалось удалить элемент. Вероятно, он уже не существует.");
                  req.setAttribute("er_type","Ошибка удаления параметра");

@@ -46,7 +46,7 @@
 
   <servlet-mapping>
     <servlet-name>EditAdmin</servlet-name>
-    <url-pattern>/admin/edit</url-pattern>
+    <url-pattern>/admin_edit</url-pattern>
   </servlet-mapping>
   <!--////////////////////EDIT_USERS//////////////////////////-->
   <servlet>
@@ -56,7 +56,7 @@
 
   <servlet-mapping>
     <servlet-name>EditUsers</servlet-name>
-    <url-pattern>/admin/user</url-pattern>
+    <url-pattern>/admin_users</url-pattern>
   </servlet-mapping>
   <!--////////////////////ERROR_PAGES//////////////////////////-->
   <error-page>
@@ -91,6 +91,10 @@
     <filter-name>FilterA</filter-name>
     <url-pattern>/admin</url-pattern>
     <url-pattern>/lk_admin.jsp</url-pattern>
+    <url-pattern>/editUser.jsp</url-pattern>
+    <url-pattern>/admin_edit</url-pattern>
+    <url-pattern>/admin_users</url-pattern>
+
 
   </filter-mapping>
 

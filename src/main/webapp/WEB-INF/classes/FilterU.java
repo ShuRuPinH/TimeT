@@ -1,3 +1,5 @@
+import DataBase.IDbTable;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,12 +16,17 @@ public class FilterU implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
         HttpSession session = ((HttpServletRequest)request).getSession();
-        if(session.getAttribute("logined")==null){
+        String user = (String) request.getAttribute("user");
+        String hash= (String) session.getAttribute("logined");
+
+        String hashAuth="";
+        if (user!=null) hashAuth = IDbTable.hashSha256(session.getCreationTime()+user+session.getId());
+
+
+        if(hash==null || !hash.equals(hashAuth) ){
 
                 ((HttpServletResponse)response).sendRedirect("/login");
 
-        } ;
-
-        chain.doFilter(request, response);
+        } else  chain.doFilter(request, response);
     }
 }

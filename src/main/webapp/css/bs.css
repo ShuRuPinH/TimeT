@@ -13,7 +13,10 @@
     color: #fdf9d9;
     background-color: #ac3a31;
 }
-
+#system{
+    color: yellow;
+    background-color: red;
+}
 .contentContainer{
     margin-top: 20px;
     margin-left: auto;
