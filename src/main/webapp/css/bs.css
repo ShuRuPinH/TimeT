@@ -34,3 +34,21 @@ body{
     margin-right: auto;
     width: 20%;
 }
+
+#thebutton:hover {background: #0078BF; color: #fff;}
+
+#thebutton{
+    text-align: center;
+}
+
+#del_note {
+    width: 40px;
+    height: 20px;
+
+
+    background: url("../images/del.png") no-repeat;
+    background-size: 20px 20px;
+    float: right;
+
+}
+

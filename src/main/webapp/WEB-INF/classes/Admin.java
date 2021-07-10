@@ -1,6 +1,4 @@
-import DataBase.DataBase;
-import DataBase.*;
-import DataBase.DataBase.Users;
+import DataBaseDir.*;
 
 
 import javax.servlet.ServletException;
@@ -10,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-import static DataBase.DataBase.INSTANCE;
+import static DataBaseDir.DataBase.INSTANCE;
 
 public class Admin extends HttpServlet {
 

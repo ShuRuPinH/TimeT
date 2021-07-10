@@ -1,6 +1,4 @@
-import DataBase.DataBase;
-import DataBase.*;
-import DataBase.DataBase.Users;
+import DataBaseDir.*;
 
 
 import javax.servlet.ServletException;
@@ -9,8 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
-import static DataBase.DataBase.INSTANCE;
+import static DataBaseDir.DataBase.INSTANCE;
 
 public class User extends HttpServlet {
 
@@ -30,6 +31,9 @@ public class User extends HttpServlet {
 
 
         resp.getWriter().println("  POST /User/   ---");
+
+
+        req.setAttribute("notes", NoteBuilder.sortNotes(INSTANCE.notes.select(e -> e.user.equals( req.getAttribute("user")))));
        req.getRequestDispatcher("lk_user.jsp").forward(req,resp);
     }
 

@@ -1,4 +1,4 @@
-import DataBase.IDbTable;
+import DataBaseDir.IDbTable;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +17,8 @@ public class FilterU implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
         HttpSession session = ((HttpServletRequest)request).getSession();
         String user = (String) request.getAttribute("user");
+        if (user==null) user=request.getParameter("user");// todo  why&how
+
         String hash= (String) session.getAttribute("logined");
 
         String hashAuth="";
@@ -24,6 +26,8 @@ public class FilterU implements Filter {
 
 
         if(hash==null || !hash.equals(hashAuth) ){
+
+            System.out.println( "FilterU    user :" +user);
 
                 ((HttpServletResponse)response).sendRedirect("/login");
 

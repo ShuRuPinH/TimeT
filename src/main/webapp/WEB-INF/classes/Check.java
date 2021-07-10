@@ -1,6 +1,8 @@
-import DataBase.DataBase;
-import DataBase.IDbTable;
-import com.sun.security.auth.module.UnixLoginModule;
+
+
+
+import DataBaseDir.DataBase;
+import DataBaseDir.IDbTable;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
@@ -9,9 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
-import static DataBase.DataBase.INSTANCE;
+import static DataBaseDir.DataBase.INSTANCE;
 
 
 public class Check extends HttpServlet {
@@ -78,7 +79,7 @@ else {
          }
 
     }
-   DataBase.Users.User temp = INSTANCE.users.findKey(em);
+  DataBase.Users.User temp = INSTANCE.users.findKey(em);
     if (temp==null){
       authErr(request,response);
     }

@@ -1,4 +1,4 @@
-package DataBase;
+package DataBaseDir;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -8,10 +8,11 @@ import java.util.*;
 public enum DataBase {
     INSTANCE;
 
-    public final static String DB_PATH = "c:/consult_db/";
+    public static String DB_PATH = "/consult_db/";
 
     public Users users = new Users();
     public Settings settings = new Settings();
+    public Notes notes =new Notes();
 
     // таблица пользователи
     public static class Users extends AbstractDbTable<String, Users.User> {
@@ -22,6 +23,7 @@ public enum DataBase {
             public  List <String> notes;
             public  boolean admin;
             public  boolean block;
+            public int limit;
             public  Map  somethingMatter;
 
 
@@ -41,8 +43,16 @@ public enum DataBase {
                 somethingMatter = new HashMap();
                 admin = false;
                 block=false;
+                limit = 1000;
             }
 
+            public int getLimit() {
+                return limit;
+            }
+
+            public void setLimit(int limit) {
+                this.limit = limit;
+            }
 
             public void addSesions(String sesion) {
                sesions.add(sesion);
@@ -101,6 +111,10 @@ public enum DataBase {
 
             public String getPassword(){
                 return password;
+            }
+
+            public void setPassword(String password) {
+                this.password = password;
             }
         }
 
@@ -178,13 +192,118 @@ public enum DataBase {
     }
 
 
-    public static void main(String[] args) throws IOException {
+    //// NOTES
+    public static class Notes extends AbstractDbTable<Notes.Key, Notes.Value> {
+        public static class Value {
+
+            /*
+              LocalDateTime create;
+    LocalDateTime start;
+    String telNumber;
+    String message;
+    int repeats;
+    double interval;
+    String ip;
+             */
+            public final String user;
+            public final String number;
+            public final String message;
+            public final long start;
+            public final long create;
+
+            public final int repeats;
+            public final double interval;
 
 
+            public Value(String user,String number, String message, long start, int repeats, double interval) {
+                this.user=user;
+                this.number = number;
+                this.message = message;
+                this.start = start;
+                this.repeats = repeats;
+                this.interval = interval;
+                create = new Date().getTime();
+            }
+
+            public String getUser() {
+                return user;
+            }
+
+            public String getNumber() {
+                return number;
+            }
+
+            public String getMessage() {
+                return message;
+            }
+
+            public long getStart() {
+                return start;
+            }
+
+            public long getCreate() {
+                return create;
+            }
+
+            public int getRepeats() {
+                return repeats;
+            }
+
+            public double getInterval() {
+                return interval;
+            }
+
+        }
+
+        public static class Key {
+            public final String user;
+            public final long create;
+            public final long start;
+
+            public Key(String user, long create, long start) {
+                this.user = user;
+                this.create = create;
+                this.start = start;
+            }
+
+            @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Key key = (Key) o;
+                return create == key.create &&
+                        start == key.start &&
+                        user.equals(key.user);
+            }
 
 
-      // INTERESTING LAMBDA
-        //  List<Users.User> list2 = INSTANCE.users.select(e -> e.is_mentor);
+            @Override
+            public int hashCode() {
+                return Objects.hash(user, create, start);
+            }
+        }
 
-    }
-}
+        private Notes() {
+            super(new TypeToken<ArrayList<Value>>() {
+            }.getType());
+        }
+
+        @Override
+        public String getTableName() {
+            return "notes.json";
+        }
+
+        @Override
+        public Key getKey(Value elem) {
+            return new Key(elem.user, elem.create, elem.start);
+        }
+
+
+        public static void main(String[] args) throws IOException {
+
+
+            // INTERESTING LAMBDA
+          //   List list2 = INSTANCE.notes.select(e -> e.user.equals());
+
+        }
+    }}
