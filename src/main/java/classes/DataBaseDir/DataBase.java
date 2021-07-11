@@ -1,4 +1,4 @@
-package DataBaseDir;
+package classes.DataBaseDir;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -8,7 +8,7 @@ import java.util.*;
 public enum DataBase {
     INSTANCE;
 
-    public static String DB_PATH = "/consult_db/";
+    public final static String DB_PATH = "/consult_db/";
 
     public Users users = new Users();
     public Settings settings = new Settings();

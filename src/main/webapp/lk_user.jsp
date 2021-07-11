@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 <jsp:include page="html_parts/before_title.jspf"/>
 
 
@@ -19,7 +21,7 @@
         </div>
     </div>
 </div>
-<form name="addnote" method="post" action="/add_note">
+<form name="addnote"  method="POST" accept-charset="UTF-8" action="/add_note">
     <input hidden="hidden" name="user" value="${user}">
 
 
@@ -60,8 +62,8 @@
                                                          placeholder="8 777 1234567"></h5>
             </div>
             <div class="col-md-4">
-                <h5 style="color: white" class=""><textarea class="form-control" name="mess" cols="25"
-                                                            accept-charset="utf-8" required
+                <h5 style="color: white" class=""><textarea class="form-control" id="mess" name="mess" cols="25"
+                                                             required
                                                             placeholder="Хотел напомнить, чтобы не забыть..."></textarea>
                 </h5>
             </div>
@@ -137,7 +139,7 @@
     </div>
     <c:set var="cnt" value="0"/>
     <c:forEach var="note" items="${notes}">
-        <form method="post" onsubmit="return confirm('Вы уверены?');" action="/add_note">
+        <form method="post"  onsubmit="return confirm('Вы уверены?');" action="/add_note">
             <input hidden name="delete" value="1">
             <input hidden name="user" value="${note.user}">
             <input hidden name="create" value="${note.create}">
@@ -147,7 +149,7 @@
                 <div class="col-md-3">
                     <p id="date_time_${cnt}">
                         <script>
-                            document.getElementById("date_time_${cnt}").innerHTML = new Date(${note.start}).toLocaleString('en-GB');
+                            document.getElementById("date_time_${cnt}").innerHTML = new Date(${note.start}).toLocaleString('ru-RU');
                         </script>
                     </p>
                     <c:set var="cnt" value="${cnt + 1}" scope="page"/>

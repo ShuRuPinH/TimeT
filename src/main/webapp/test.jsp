@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:include page="html_parts/before_title.jspf" />
 <html>
 <head>
     <title>Title</title>
@@ -10,20 +11,19 @@
 ${header.get("cookie")}
 
 <br><br>
-<c:forEach var="d" items="${param}">
-${d.key}   =   ${d.value}.
-        </c:forEach><br>
+
+
 
 <br><br>
 
 ${in}
 ////////////////////////
-<%= pageContext.getRequest().getAttribute("is_del")%>
+<p id="rez"> be be be</p>
 ////////////////////////
 
 <form method="post" action="test">
-    <input placeholder="attr" type="text" name="name">
-    <input placeholder="val" type="text" name="val">
+    <input value="val"  type="text" name="name">
+    <input id="val" type="text" name="val">
 
     <input type="submit">
 
@@ -39,10 +39,7 @@ ${arz}<br>
 <br>
 
 ${sessionScope}
-<form action="/admin" method="post">
-    <input type="text" name="data" value="mydata" />
-    <input type="submit" />
-</form>
+
 
 <hr>
 <hr>
@@ -53,6 +50,12 @@ ${sessionScope}
 
 <h4> Class = <%=clas%> </h4>
 
+<script src="JS/base64.js">
+</script>
 
+<script>
+   document.getElementById('rez').innerText = Base64Decode('${param.val}');
+
+</script>;.
 </body>
 </html>

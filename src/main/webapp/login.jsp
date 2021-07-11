@@ -23,7 +23,7 @@
             <div class="tab-content">
                 <div id="signInTab" class="tab-pane fade show active">
                     <br>
-                    <form id="main_form" name="avtor" method="post" action="/check"  >
+                    <form id="main_form" name="avtor" accept-charset="UTF-8" method="post" action="/check"  >
 
                         <div class="form-group input-group">
 

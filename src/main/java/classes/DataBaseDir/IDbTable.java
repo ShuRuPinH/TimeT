@@ -1,4 +1,4 @@
-package DataBaseDir;
+package classes.DataBaseDir;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

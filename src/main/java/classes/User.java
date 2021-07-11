@@ -1,4 +1,6 @@
-import DataBaseDir.*;
+package classes;
+
+import classes.DataBaseDir.*;
 
 
 import javax.servlet.ServletException;
@@ -11,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import static DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.DataBase.INSTANCE;
 
 public class User extends HttpServlet {
 
@@ -25,7 +27,7 @@ public class User extends HttpServlet {
 
         String hashAuth = IDbTable.hashSha256(session.getCreationTime()+user+session.getId());
           session.setAttribute("logined", hashAuth);
-        session.setMaxInactiveInterval(120); ///  !!!!!!!!
+        session.setMaxInactiveInterval(60*10); ///  !!!!!!!!
         ///////////
 
 

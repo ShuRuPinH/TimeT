@@ -1,4 +1,6 @@
-import DataBaseDir.IDbTable;
+package classes.filters;
+
+import classes.DataBaseDir.IDbTable;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -15,8 +17,7 @@ public class FilterA implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
-        response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
+
 
         HttpSession session = ((HttpServletRequest)request).getSession();
         String hash =(String) session.getAttribute("logined");

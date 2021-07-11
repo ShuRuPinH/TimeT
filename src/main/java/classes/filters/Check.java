@@ -1,8 +1,8 @@
+package classes.filters;
 
 
-
-import DataBaseDir.DataBase;
-import DataBaseDir.IDbTable;
+import classes.DataBaseDir.DataBase;
+import classes.DataBaseDir.IDbTable;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-import static DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.DataBase.INSTANCE;
 
 
 public class Check extends HttpServlet {
@@ -24,6 +24,7 @@ public class Check extends HttpServlet {
 
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
+    //    request.setCharacterEncoding("UTF-8");
 
 
 

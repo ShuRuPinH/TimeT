@@ -1,4 +1,6 @@
-import DataBaseDir.DataBase;
+package classes;
+
+import classes.DataBaseDir.DataBase;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -6,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.DataBase.INSTANCE;
 
 public class EditAdmin extends HttpServlet {
 
@@ -17,6 +19,8 @@ public class EditAdmin extends HttpServlet {
 
      String name=   req.getParameter("name");
      String description =   req.getParameter("description");
+        System.out.println("description : "+description);
+
      Integer value = Integer.valueOf(req.getParameter("value"));
      String add_edt_del = req.getParameter("add_edt_del");
         System.out.println(name+"   "+description+"    "+ value  +"         "+add_edt_del);

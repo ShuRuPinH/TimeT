@@ -1,4 +1,6 @@
-import DataBaseDir.IDbTable;
+package classes.filters;
+
+import classes.DataBaseDir.IDbTable;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +17,9 @@ public class FilterU implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
+
+        request.setCharacterEncoding("UTF-8");
+
         HttpSession session = ((HttpServletRequest)request).getSession();
         String user = (String) request.getAttribute("user");
         if (user==null) user=request.getParameter("user");// todo  why&how

@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<jsp:include page="html_parts/before_title.jspf" />
+
+<jsp:include page="html_parts/before_title.jspf" /><% request.setCharacterEncoding("UTF-8"); %>
     <title>Панель администратора</title>
 </head>
 <div class="container">
@@ -29,7 +30,7 @@
     </div>
 <c:forEach var="user" items="${users}">
 
-<form id="${user.login}" method="post" action="/admin_users">
+<form id="${user.login}" method="post"  action="/admin_users">
 <div  class="row">
     <div class="col-md-3">
         <input id="_login_" name="login" type="hidden" value="${user.login}">
@@ -95,15 +96,15 @@
             <h5 style="color: white" class="">Действия</h5>
         </div>
     </div>
-    <form name="new_set" method="POST" accept-charset="UTF-8" action="/admin_edit">
+    <form name="new_set" method="POST"  action="/admin_edit">
     <div style="background-color: darkorange ;margin-bottom: 5px; padding-top: 10px" class="row">
 
         <div class="col-md-2">
-            <h5 class=""><input style="width: 80%" name="name" placeholder="название"></h5>
+            <h5 class=""><input style="width: 80%" name="name"pattern="[A-Za-z]" placeholder="название"></h5>
 
         </div>
         <div class="col-md-5">
-            <h5  class=""><input name="description" style="width: 80%" placeholder="описание паметра с ед. имерения"></h5>
+            <h5  class=""><input name="description" style="width: 80%" accept-charset="UTF-8" placeholder="описание паметра с ед. имерения"></h5>
         </div>
         <div class="col-md-1">
             <h5  class="">  </h5>
