@@ -73,8 +73,8 @@
     <div class="mx-auto text-center col-md-6"><hr>
         <hr>
         <h4>Настроки приложения.</h4>
-        <p class="lead text-primary">Изменить, добавить или удалить параметр приложения.</p>
-        <p class="text-danger"><b> * Только латинские символы</b></p>
+        <p class="lead text-primary">Изменить, добавить или удалить параметр приложения, кроме системного.</p>
+
     </div>
 </div>
 <div class="contentContainer">
@@ -100,11 +100,11 @@
     <div style="background-color: darkorange ;margin-bottom: 5px; padding-top: 10px" class="row">
 
         <div class="col-md-2">
-            <h5 class=""><input style="width: 80%" name="name"pattern="[A-Za-z]" placeholder="название"></h5>
+            <h5 class=""><input type="text"  style="width: 80%" name="name"pattern="[a-zA-Z0-9_]{5,20}" max="20" placeholder="название"></h5>
 
         </div>
         <div class="col-md-5">
-            <h5  class=""><input name="description" style="width: 80%" accept-charset="UTF-8" placeholder="описание паметра с ед. имерения"></h5>
+            <h5  class=""><input name="description" max="50" style="width: 80%" accept-charset="UTF-8" placeholder="описание паметра с ед. имерения"></h5>
         </div>
         <div class="col-md-1">
             <h5  class="">  </h5>

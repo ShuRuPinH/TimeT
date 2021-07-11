@@ -17,7 +17,9 @@ public class FilterA implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html");
+        response.setCharacterEncoding("UTF-8");
 
         HttpSession session = ((HttpServletRequest)request).getSession();
         String hash =(String) session.getAttribute("logined");

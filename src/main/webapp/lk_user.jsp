@@ -62,7 +62,7 @@
                                                          placeholder="8 777 1234567"></h5>
             </div>
             <div class="col-md-4">
-                <h5 style="color: white" class=""><textarea class="form-control" id="mess" name="mess" cols="25"
+                <h5 style="color: white" class=""><textarea class="form-control" maxlength="160" id="mess" name="mess" cols="25"
                                                              required
                                                             placeholder="Хотел напомнить, чтобы не забыть..."></textarea>
                 </h5>
