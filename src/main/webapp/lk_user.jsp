@@ -72,7 +72,7 @@
                                                          type="number" placeholder="+ X раз"></h5>
             </div>
             <div class="col-md-2">
-                <h5 style="color: white" class=""><input class="form-control" name="intr" min="0" step="0.1"
+                <h5 style="color: white" class=""><input class="form-control" name="intr" min="0" step="0.5"
                                                          type="number" placeholder="0.5 мин"></h5>
             </div>
         </div>
@@ -139,9 +139,10 @@
     </div>
     <c:set var="cnt" value="0"/>
     <c:forEach var="note" items="${notes}">
+
         <form method="post"  onsubmit="return confirm('Вы уверены?');" action="/add_note">
             <input hidden name="delete" value="1">
-            <input hidden name="user" value="${note.user}">
+            <input hidden id="usrl" name="user" value="${note.user}">
             <input hidden name="create" value="${note.create}">
             <input hidden name="start" value="${note.start}">
 
@@ -161,7 +162,7 @@
                     <h6 class=""> ${note.message} </h6>
                 </div>
                 <div class="col-md-2">
-                    <h6 class="">Повторится ${note.repeats} раз</h6>
+                    <h6 class="">Повторится ${note.repeats} раз (раза)</h6>
                 </div>
                 <div class="col-md-2">
                     <h6 class="">с интервалом в ${note.interval} мин.</h6>
@@ -177,33 +178,35 @@
 </div>
 <br><br>
 <div class="contentContainer">
-    <div style="background-color: #1237c6; margin-bottom: 4px" class="row">
+    <div class="row">
 
-        <h3 style="text-align: center; color: white" class="">Архив напоминаний </h3>
-    </div>
-        <div style="background-color: grey; margin-bottom: 4px" class="row">
-            <div class="col-md-3">
-                <h4 style="color: white" class="">Дата и время </h4>
+
+
+            <div style="background-color: #9096b0;  "class="col-md-7">
+                <h4 style="text-align: center; color: white" class="">История напоминаний</h4>
+                <iframe src=""   style="font-weight: bold;background-color: whitesmoke; color:
+                white" id="histN" width="100%" src=""></iframe>
 
             </div>
-            <div class="col-md-1">
-                <h4 style="color: white" class="">Телефон</h4>
+        <div class="col-md-1"></div>
+            <div style="background-color: #9096b0;" class="col-md-4">
+                <h4 style="text-align: center; color: white" class="">История сессий</h4>
+                <iframe src=""   style="font-weight: bold;background-color: whitesmoke; color:
+                white" id="histS" width="100%" src=""></iframe>
             </div>
-            <div class="col-md-3">
-                <h4 style="color: white" class="">Текст </h4>
-            </div>
-            <div class="col-md-2">
-                <h4 style="color: white" class="">Повторы</h4>
-            </div>
-            <div class="col-md-2">
-                <h4 style="color: white" class="">Интервал</h4>
-            </div>
-            <div class="col-md-1">
-                <h6 class=""></h6>
-            </div>
+
+
         </div>
 
 </div>
+<script>
 
-</body>
-</html>
+        var user_=document.getElementById("usrl").value;
+        user_=user_.split(".").join("_");
+
+        document.getElementById('histN').src = "/history/"+user_+".his";
+        document.getElementById('histS').src = "/history/"+user_+".his";
+
+</script>
+
+<jsp:include page="html_parts/bottom.jspf"/>

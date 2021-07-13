@@ -21,7 +21,7 @@ public class TEST_DD extends HttpServlet {
       String err="";
 
         try {
-            Files.createDirectory(Path.of("/consult_db"));
+            Files.createDirectory(Path.of("/history123")); //todo all system folders
         } catch (IOException e) {
 
             StringWriter errors = new StringWriter();

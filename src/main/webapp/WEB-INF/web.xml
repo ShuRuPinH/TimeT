@@ -22,7 +22,7 @@
   <!--////////////////////ADMIN//////////////////////////-->
   <servlet>
     <servlet-name>Admin panel</servlet-name>
-    <servlet-class>classes.Admin</servlet-class>
+    <servlet-class>classes.pages.Admin</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -33,7 +33,7 @@
   <!--////////////////////USER//////////////////////////-->
   <servlet>
     <servlet-name>User</servlet-name>
-    <servlet-class>classes.User</servlet-class>
+    <servlet-class>classes.pages.User</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -43,7 +43,7 @@
   <!--////////////////////EDIT_ADMIN//////////////////////////-->
   <servlet>
     <servlet-name>EditAdmin</servlet-name>
-    <servlet-class>classes.EditAdmin</servlet-class>
+    <servlet-class>classes.pages.EditAdmin</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -53,7 +53,7 @@
   <!--////////////////////EDIT_USERS//////////////////////////-->
   <servlet>
     <servlet-name>EditUsers</servlet-name>
-    <servlet-class>classes.EditUsers</servlet-class>
+    <servlet-class>classes.pages.EditUsers</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -63,7 +63,7 @@
   <!--////////////////////EDIT_USER_PARAMS//////////////////////////-->
   <servlet>
     <servlet-name>EditUserParams</servlet-name>
-    <servlet-class>classes.EditUserParams</servlet-class>
+    <servlet-class>classes.pages.EditUserParams</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -73,7 +73,7 @@
   <!--////////////////////ADD_NOTE//////////////////////////-->
   <servlet>
     <servlet-name>EditNotes</servlet-name>
-    <servlet-class>classes.EditNotes</servlet-class>
+    <servlet-class>classes.pages.EditNotes</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -123,6 +123,7 @@
     <url-pattern>/edit_user_params</url-pattern>
     <url-pattern>/editUser.jsp</url-pattern>
     <url-pattern>/consult_db/*</url-pattern>
+<!--    <url-pattern>/history/*</url-pattern>-->
 
 
   </filter-mapping>
