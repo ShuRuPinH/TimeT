@@ -21,7 +21,7 @@ ${in}
 <p id="rez"> be be be</p>
 ////////////////////////
 
-<form method="post" action="test">
+<form method="post" action="/test_01">
     <input value="val"  type="text" name="name">
     <input id="val" type="text" name="val">
 

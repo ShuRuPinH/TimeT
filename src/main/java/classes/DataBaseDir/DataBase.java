@@ -19,7 +19,7 @@ public enum DataBase {
         public static class User {
             public final String login;
             public  String password;
-            public  List <String> sesions;
+            public  List <Long> sessions;
             public  List <String> notes;
             public  boolean admin;
             public  boolean block;
@@ -38,7 +38,7 @@ public enum DataBase {
             public User(String login, String password) {
                 this.login = login;
                 this.password = password;
-                sesions = new ArrayList<>();
+                sessions = new ArrayList<>();
                 notes =new ArrayList<>();
                 somethingMatter = new HashMap();
                 admin = false;
@@ -54,8 +54,8 @@ public enum DataBase {
                 this.limit = limit;
             }
 
-            public void addSesions(String sesion) {
-               sesions.add(sesion);
+            public void addSesions(Long sesion) {
+               sessions.add(sesion);
             }
 
             public void setNotes(String note) {
@@ -75,16 +75,16 @@ public enum DataBase {
 
 
 
-            public List<String> getSesions() {
-               Collections.sort(sesions);
-                return sesions;
+            public List<Long> getSessions() {
+               Collections.sort(sessions);
+                return sessions;
             }
 
             public String getLastSesion() {
-                if (sesions!=null && !sesions.isEmpty())
+                if (sessions !=null && !sessions.isEmpty())
 
-                {Collections.sort(sesions);
-                return sesions.get(sesions.size()-1);}
+                {Collections.sort(sessions);
+                return new Date(sessions.get(sessions.size()-1)).toString().substring(0,22) ;}
                 else return "... уже и не вспомнить...";
             }
 

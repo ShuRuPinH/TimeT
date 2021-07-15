@@ -27,7 +27,7 @@ public class FilterA implements Filter {
 
         System.out.println("hash = "+hash+"            hashAuth = "+hashAuth);
        if(hash==null || !hash.equals(hashAuth)){
-
+           System.out.println(" ---- FilterA to login ---- ");
               ((HttpServletResponse)response).sendRedirect("/login");
        } else   chain.doFilter(request, response);
     }

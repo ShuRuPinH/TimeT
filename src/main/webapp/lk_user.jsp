@@ -14,6 +14,7 @@
             <h3 style="font-weight: bolder" class="display-4">Кабинет Пользователя </h3>
             <hr>
             ${user}
+            <input hidden id="usrl" name="user" value="${user}">
             <hr>
             <p class="lead text-primary">В нужный момент вам придет СМС с вашим текстом,
                 можно задать некоторое кол-во повторов, через нужный интервал.
@@ -142,7 +143,7 @@
 
         <form method="post"  onsubmit="return confirm('Вы уверены?');" action="/add_note">
             <input hidden name="delete" value="1">
-            <input hidden id="usrl" name="user" value="${note.user}">
+            <input hidden  name="user" value="${note.user}">
             <input hidden name="create" value="${note.create}">
             <input hidden name="start" value="${note.start}">
 
@@ -162,7 +163,7 @@
                     <h6 class=""> ${note.message} </h6>
                 </div>
                 <div class="col-md-2">
-                    <h6 class="">Повторится ${note.repeats} раз (раза)</h6>
+                    <h6 class="">Повторится ${note.repeats} раз(а)</h6>
                 </div>
                 <div class="col-md-2">
                     <h6 class="">с интервалом в ${note.interval} мин.</h6>
@@ -179,33 +180,26 @@
 <br><br>
 <div class="contentContainer">
     <div class="row">
-
-
-
             <div style="background-color: #9096b0;  "class="col-md-7">
                 <h4 style="text-align: center; color: white" class="">История напоминаний</h4>
                 <iframe src=""   style="font-weight: bold;background-color: whitesmoke; color:
                 white" id="histN" width="100%" src=""></iframe>
-
             </div>
-        <div class="col-md-1"></div>
-            <div style="background-color: #9096b0;" class="col-md-4">
+
+            <div style="background-color: #9096b0;" class="col-md-5">
                 <h4 style="text-align: center; color: white" class="">История сессий</h4>
                 <iframe src=""   style="font-weight: bold;background-color: whitesmoke; color:
                 white" id="histS" width="100%" src=""></iframe>
             </div>
-
-
         </div>
-
 </div>
 <script>
+        var temp="";
 
         var user_=document.getElementById("usrl").value;
         user_=user_.split(".").join("_");
-
-        document.getElementById('histN').src = "/history/"+user_+".his";
-        document.getElementById('histS').src = "/history/"+user_+".his";
+        document.getElementById('histN').src =temp+ "/history/"+user_+".his";
+        document.getElementById('histS').src =temp+ "/history/"+user_+".ses";
 
 </script>
 

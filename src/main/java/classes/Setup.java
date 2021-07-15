@@ -14,21 +14,22 @@ import java.nio.file.Path;
 import static classes.DataBaseDir.DataBase.INSTANCE;
 
 @WebServlet ("/setup")
-public class TEST_DD extends HttpServlet {
+public class Setup extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
       String err="";
-
+        String realPath = getServletContext().getRealPath("/");
         try {
-            Files.createDirectory(Path.of("/history123")); //todo all system folders
+
+            Files.createDirectory(Path.of(realPath+"/history")); //todo all system folders
         } catch (IOException e) {
 
             StringWriter errors = new StringWriter();
             e.printStackTrace(new PrintWriter(errors));
             err=errors.toString();
         }
-    resp.getWriter().println(err+"\n ===========DONE ================");
+    resp.getWriter().println(err+"\n ===========DONE ================       realPath: "+realPath);
     }
 
 

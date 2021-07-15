@@ -34,14 +34,15 @@ if (session.getAttribute("logined")!=null && request.getParameter("auth")==null)
   //  System.out.println(" auth = "+request.getParameter("auth"));
 
     String hashAdmin = IDbTable.hashSha256(session.getCreationTime()+"admin"+session.getId());
-
+    request.setAttribute("user", user);
 
     if (hashA.equals(hashAdmin)){
+
         request.getRequestDispatcher("/admin").forward(request,response);return;}
     else if (user!= null){
         String hashUser = IDbTable.hashSha256(session.getCreationTime()+user+session.getId());
        if (hashA.equals(hashUser)){
-            request.setAttribute("user", user);
+
             request.getRequestDispatcher("/user").forward(request,response);return;}
     }
 }
@@ -85,18 +86,20 @@ else {
       authErr(request,response);
     }
     else {
+        session.invalidate();
+
+        request.getSession().setAttribute("user", temp.login);
+        request.getSession().setAttribute("realPath", getServletContext().getRealPath("/"));
+        System.out.println(" ---- CHECK ----      set Session Attr \"user\":"+temp.login);
         if (temp.password.equals(hash)) {
            if (temp.getAdmin()) {
-               System.out.println("to /admin");
+               System.out.println("to /admin "+ temp.login);
 
-               session.invalidate();
-               request.setAttribute("admin", temp);
+            //   request.setAttribute("admin", temp);
                request.getRequestDispatcher("/admin").forward(request,response);
            }
            else {
-               System.out.println("to /user");
-              session.invalidate();
-               request.setAttribute("user", temp.getLogin());
+               System.out.println("to /user " + temp.login);
                request.getRequestDispatcher("/user").forward(request,response);
            }
         }

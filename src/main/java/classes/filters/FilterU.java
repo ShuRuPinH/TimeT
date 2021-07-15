@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static classes.DataBaseDir.DataBase.INSTANCE;
+
 public class FilterU implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
@@ -23,8 +25,7 @@ public class FilterU implements Filter {
         response.setCharacterEncoding("UTF-8");
 
         HttpSession session = ((HttpServletRequest)request).getSession();
-        String user = (String) request.getAttribute("user");
-        if (user==null) user=request.getParameter("user");// todo  why&how
+        String user = (String) session.getAttribute("user");
 
         String hash= (String) session.getAttribute("logined");
 
@@ -34,10 +35,12 @@ public class FilterU implements Filter {
 
         if(hash==null || !hash.equals(hashAuth) ){
 
-            System.out.println( "FilterU    user :" +user);
+            System.out.println(" ---- FilterU to login ----     user:"+user);
 
                 ((HttpServletResponse)response).sendRedirect("/login");
 
-        } else  chain.doFilter(request, response);
+        }
+
+        else  chain.doFilter(request, response);
     }
 }

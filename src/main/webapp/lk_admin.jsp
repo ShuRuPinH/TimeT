@@ -33,7 +33,7 @@
 <form id="${user.login}" method="post"  action="/admin_users">
 <div  class="row">
     <div class="col-md-3">
-        <input id="_login_" name="login" type="hidden" value="${user.login}">
+        <input  name="user" type="hidden" value="${user.login}">
         <h5 class="">${user.login}
                 <c:if test="${user.admin}">
                     <c:out value="<span  class=\"badge\">Admin</span>"  escapeXml="false"/>
@@ -72,7 +72,7 @@
 <div class="row">
     <div class="mx-auto text-center col-md-6"><hr>
         <hr>
-        <h4>Настроки приложения.</h4>
+        <h4>Настройки приложения.</h4>
         <p class="lead text-primary">Изменить, добавить или удалить параметр приложения, кроме системного.</p>
 
     </div>
@@ -164,7 +164,16 @@
 
     </c:forEach>
 </div>
+<div class="contentContainer">
+    <div class="row">
+  <div style="background-color: #9096b0;" class="col-md-12">
+            <h4 style="text-align: center; color: white" class="">История сессий администрирования</h4>
+            <iframe src="/history/admin.ses"   style="font-weight: bold;background-color: whitesmoke; color:
+                white" id="histS" width="100%" src=""></iframe>
+        </div>
+    </div>
+</div>
 
 <script src="JS/edit.js"></script>
-</body>
-</html>
+
+<jsp:include page="html_parts/bottom.jspf"/>
