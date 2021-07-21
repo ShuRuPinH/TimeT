@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 import static classes.DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 
 public class FilterU implements Filter {
     public void init(FilterConfig config) throws ServletException {
@@ -34,7 +35,7 @@ public class FilterU implements Filter {
 
 
         if(hash==null || !hash.equals(hashAuth) ){
-
+            INSTANCE_LOG.logAutWrite("сработал фильтр пользовательского доступа     login: " +user);
             System.out.println(" ---- FilterU to login ----     user:"+user);
 
                 ((HttpServletResponse)response).sendRedirect("/login");

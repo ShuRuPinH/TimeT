@@ -54,7 +54,7 @@
                         <div class="d-grid gap-2">
                             <input type="hidden" name="auth" value="0102">
                             <button type="button"  class=" btn btn-primary shadow " onclick="check()" >В О Й Т И</button>
-                            <a href="#"style="    margin-left: auto;
+                            <a href="forget.html"style="    margin-left: auto;
     margin-right: auto;"   class="  brand-link">Не помню пароль ;(</a>
                         </div>
 

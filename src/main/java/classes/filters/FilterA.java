@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static classes.DataBaseDir.Loger.INSTANCE_LOG;
+
 public class FilterA implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
@@ -28,6 +30,7 @@ public class FilterA implements Filter {
         System.out.println("hash = "+hash+"            hashAuth = "+hashAuth);
        if(hash==null || !hash.equals(hashAuth)){
            System.out.println(" ---- FilterA to login ---- ");
+           INSTANCE_LOG.logAutWrite("сработал фильтр административного доступа     SESSION_ID: " +session.getId());
               ((HttpServletResponse)response).sendRedirect("/login");
        } else   chain.doFilter(request, response);
     }

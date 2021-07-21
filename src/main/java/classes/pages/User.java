@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.List;
 
 import static classes.DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 
 public class User extends HttpServlet {
 
@@ -62,6 +63,8 @@ public class User extends HttpServlet {
 
 
         req.setAttribute("notes", NoteBuilder.sortNotes(INSTANCE.notes.select(e -> e.user.equals(user))));
+
+        INSTANCE_LOG.logWrite("начало сессии пользователя    login:" +user+"   SESSION_ID:"+session.getId());
        req.getRequestDispatcher("lk_user.jsp").forward(req,resp);
     }
 

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import static classes.DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 
 public class EditAdmin extends HttpServlet {
 
@@ -34,6 +35,7 @@ public class EditAdmin extends HttpServlet {
              }
 
              INSTANCE.settings.put(new DataBase.Settings.Record(name,description,value,false));
+             INSTANCE_LOG.logWrite("добавлен новый параметр    param:" +name + " - "+ description);
              redirect(resp);
              break;
          }
@@ -42,11 +44,12 @@ public class EditAdmin extends HttpServlet {
              DataBase.INSTANCE.settings.remove(name);
 
              if (! INSTANCE.settings.put(new DataBase.Settings.Record(name,description,value,tmp))){
-                 req.setAttribute("error", "Не удалось добавить настройку. Вероятно, она уже существует.");
-                 req.setAttribute("er_type","Ошибка добавления параметра");
+                 req.setAttribute("error", "Не удалось изменить настройку.");
+                 req.setAttribute("er_type","Ошибка изменения параметра");
                  req.getRequestDispatcher("/gen_error.jsp").forward(req, resp);
                  return;
              }
+             INSTANCE_LOG.logWrite("изменен параметр   param:" +name);
              redirect(resp);
              break;
          }
@@ -64,7 +67,7 @@ public class EditAdmin extends HttpServlet {
                  req.getRequestDispatcher("/gen_error.jsp").forward(req, resp);
                  return;
              }
-
+             INSTANCE_LOG.logWrite("удален  параметр   param:" +name);
              redirect(resp);
              break;
          }

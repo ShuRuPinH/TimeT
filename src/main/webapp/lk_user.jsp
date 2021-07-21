@@ -16,6 +16,9 @@
             ${user}
             <input hidden id="usrl" name="user" value="${user}">
             <hr>
+            <a style="color: darkorange" href="/verif?mode=new&login=${user}">Изменить пароль,</a> придет письмо на емейл
+            со сслыкой для изменения.
+            <hr>
             <p class="lead text-primary">В нужный момент вам придет СМС с вашим текстом,
                 можно задать некоторое кол-во повторов, через нужный интервал.
                 * Только на номера России. </p>

@@ -122,6 +122,7 @@
     <url-pattern>/admin_users</url-pattern>
     <url-pattern>/edit_user_params</url-pattern>
     <url-pattern>/editUser.jsp</url-pattern>
+    <url-pattern>/recover.jsp</url-pattern>
     <url-pattern>/consult_db/*</url-pattern>
 <!--    <url-pattern>/history/*</url-pattern>-->
 

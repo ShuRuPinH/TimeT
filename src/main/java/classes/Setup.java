@@ -15,23 +15,24 @@ import static classes.DataBaseDir.DataBase.INSTANCE;
 
 @WebServlet ("/setup")
 public class Setup extends HttpServlet {
-
+    static String realPath;
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
       String err="";
-        String realPath = getServletContext().getRealPath("/");
+        String realPath1 = getServletContext().getRealPath("/");
+        realPath=realPath1;
         try {
-
-            Files.createDirectory(Path.of(realPath+"/history")); //todo all system folders
+            Files.createDirectory(Path.of(realPath1+"/dir_log")); //todo all system folders
+            Files.createDirectory(Path.of(realPath1+"/history"));
+            Files.createDirectory(Path.of(realPath1+"/archive"));
         } catch (IOException e) {
 
             StringWriter errors = new StringWriter();
             e.printStackTrace(new PrintWriter(errors));
             err=errors.toString();
         }
-    resp.getWriter().println(err+"\n ===========DONE ================       realPath: "+realPath);
+    resp.getWriter().println(err+"\n ===========DONE ================       realPath: "+realPath1);
     }
-
 
 
 

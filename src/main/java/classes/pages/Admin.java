@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.List;
 
 import static classes.DataBaseDir.DataBase.INSTANCE;
+import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 
 public class Admin extends HttpServlet {
 
@@ -60,6 +61,7 @@ public class Admin extends HttpServlet {
       req.setAttribute("users",INSTANCE.users.getAll());
         req.setAttribute("sets",INSTANCE.settings.getAll());
 
+        INSTANCE_LOG.logWrite("начало сессии администратора  login:" +user+"   SESSION_ID:"+session.getId());
       req.getRequestDispatcher("lk_admin.jsp").forward(req,resp);
 }
 
