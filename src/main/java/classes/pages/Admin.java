@@ -1,7 +1,6 @@
 package classes.pages;
 
-import classes.DataBaseDir.*;
-
+import classes.DataBaseDir.IDbTable;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -22,17 +21,17 @@ import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 public class Admin extends HttpServlet {
 
     List<String> listSessions = new ArrayList<>();
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
 
 
         // todo sesion ang cookie
 
         HttpSession session = req.getSession();
         String user = (String) session.getAttribute("user");
-        if (!listSessions.contains(session.getId())){
-            String hashAuth = IDbTable.hashSha256(session.getCreationTime()+"admin"+session.getId());
+        if (!listSessions.contains(session.getId())) {
+            String hashAuth = IDbTable.hashSha256(session.getCreationTime() + "admin" + session.getId());
 
             session.setAttribute("logined", hashAuth);
             session.setAttribute("axe", 104);
@@ -41,29 +40,29 @@ public class Admin extends HttpServlet {
             listSessions.add(session.getId());
 
             String ipAddr = req.getRemoteAddr();
-            System.out.println("ipAddr: "+ipAddr);
+            System.out.println("ipAddr: " + ipAddr);
 
-            String report =(new Date(session.getCreationTime())).toString().substring(0,23)+"\t\tses.ID: "+(session.getId())
-                    +"\t\tAdmin aka: " +user;
+            String report = (new Date(session.getCreationTime())).toString().substring(0, 23) + "\t\tses.ID: " + (session.getId())
+                    + "\t\tAdmin aka: " + user;
 
-            System.out.println("-admin-user-= "+user);
-            Files.writeString(Path.of(getServletContext().getRealPath("/")+"/history/admin.ses"),
-                    report+"\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            System.out.println("-admin-user-= " + user);
+            Files.writeString(Path.of(getServletContext().getRealPath("/") + "/history/admin.ses"),
+                    report + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 
         }
 
-        String hashAuth = IDbTable.hashSha256(session.getCreationTime()+"admin"+session.getId());
+        String hashAuth = IDbTable.hashSha256(session.getCreationTime() + "admin" + session.getId());
 
-       ///  !!!!!!!!
+        ///  !!!!!!!!
         ///////////
 
 
-      req.setAttribute("users",INSTANCE.users.getAll());
-        req.setAttribute("sets",INSTANCE.settings.getAll());
+        req.setAttribute("users", INSTANCE.users.getAll());
+        req.setAttribute("sets", INSTANCE.settings.getAll());
 
-        INSTANCE_LOG.logWrite("начало сессии администратора  login:" +user+"   SESSION_ID:"+session.getId());
-      req.getRequestDispatcher("lk_admin.jsp").forward(req,resp);
-}
+        INSTANCE_LOG.logWrite("начало сессии администратора  login:" + user + "   SESSION_ID:" + session.getId());
+        req.getRequestDispatcher("lk_admin.jsp").forward(req, resp);
+    }
 
 
     @Override

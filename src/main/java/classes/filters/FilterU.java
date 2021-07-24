@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-import static classes.DataBaseDir.DataBase.INSTANCE;
 import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 
 public class FilterU implements Filter {
@@ -25,23 +24,26 @@ public class FilterU implements Filter {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
 
-        HttpSession session = ((HttpServletRequest)request).getSession();
+        HttpSession session = ((HttpServletRequest) request).getSession();
         String user = (String) session.getAttribute("user");
 
-        String hash= (String) session.getAttribute("logined");
+        String hash = (String) session.getAttribute("logined");
 
-        String hashAuth="";
-        if (user!=null) hashAuth = IDbTable.hashSha256(session.getCreationTime()+user+session.getId());
+        String hashAuthAdm = IDbTable.hashSha256(session.getCreationTime() + "admin" + session.getId());
 
+        String hashAuth = "";
+        if (user != null) hashAuth = IDbTable.hashSha256(session.getCreationTime() + user + session.getId());
 
-        if(hash==null || !hash.equals(hashAuth) ){
-            INSTANCE_LOG.logAutWrite("сработал фильтр пользовательского доступа     login: " +user);
-            System.out.println(" ---- FilterU to login ----     user:"+user);
+        if (hash!=null && (hash.equals(hashAuthAdm) || hash.equals(hashAuth))){
+            chain.doFilter(request, response);
+        }
+        else
+        {
+            INSTANCE_LOG.logAutWrite("сработал фильтр пользовательского доступа     login: " + user);
+            System.out.println(" ---- FilterU to login ----     user:" + user);
 
-                ((HttpServletResponse)response).sendRedirect("/login");
+            ((HttpServletResponse) response).sendRedirect("/login");
 
         }
-
-        else  chain.doFilter(request, response);
     }
 }

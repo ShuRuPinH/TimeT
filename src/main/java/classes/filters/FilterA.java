@@ -23,15 +23,15 @@ public class FilterA implements Filter {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
 
-        HttpSession session = ((HttpServletRequest)request).getSession();
-        String hash =(String) session.getAttribute("logined");
-        String hashAuth = IDbTable.hashSha256(session.getCreationTime()+"admin"+session.getId());
+        HttpSession session = ((HttpServletRequest) request).getSession();
+        String hash = (String) session.getAttribute("logined");
+        String hashAuth = IDbTable.hashSha256(session.getCreationTime() + "admin" + session.getId());
 
-        System.out.println("hash = "+hash+"            hashAuth = "+hashAuth);
-       if(hash==null || !hash.equals(hashAuth)){
-           System.out.println(" ---- FilterA to login ---- ");
-           INSTANCE_LOG.logAutWrite("сработал фильтр административного доступа     SESSION_ID: " +session.getId());
-              ((HttpServletResponse)response).sendRedirect("/login");
-       } else   chain.doFilter(request, response);
+        System.out.println("hash = " + hash + "            hashAuth = " + hashAuth);
+        if (hash == null || !hash.equals(hashAuth)) {
+            System.out.println(" ---- FilterA to login ---- ");
+            INSTANCE_LOG.logAutWrite("сработал фильтр административного доступа     SESSION_ID: " + session.getId());
+            ((HttpServletResponse) response).sendRedirect("/login");
+        } else chain.doFilter(request, response);
     }
 }

@@ -9,6 +9,7 @@ import java.util.function.Predicate;
 /**
  * Интерфейс для таблиц БД,
  * включает статический метод {@link #hashSha256(String)} для получения хеша по паролю
+ *
  * @param <K> ключ
  * @param <V> значение
  */
@@ -16,18 +17,26 @@ public interface IDbTable<K, V> {
     String getTableName();
 
     List<V> getAll();
+
     List<V> select(Predicate<V> check);
+
     K getKey(V elem);
+
     boolean put(V elem) throws Exception;
+
     V remove(K key) throws Exception;
+
     V findKey(K key);
+
     boolean exists(K key);
 
     void readAll() throws Exception;
+
     void saveAll() throws Exception;
 
     /**
      * Метод для получения хеша из строки по алгоритму SHA-256
+     *
      * @param stringToEncrypt исходная строка (например, пароль)
      * @return хеш-код в виде строки байт (16x представление) с лидирующими нулями
      */
@@ -53,7 +62,6 @@ public interface IDbTable<K, V> {
         }
         return hexString.toString();
     }
-
 
 
 }

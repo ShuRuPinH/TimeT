@@ -14,6 +14,7 @@ import java.nio.file.Path;
 import static classes.DataBaseDir.DataBase.INSTANCE;
 
 @WebServlet ("/setup")
+// инсталяционый сервлет, создает системные папки
 public class Setup extends HttpServlet {
     static String realPath;
     @Override
