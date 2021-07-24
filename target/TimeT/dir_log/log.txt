@@ -1,0 +1,76 @@
+сб июл. 17 03:12:21 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:04D81908CFF7DA5A367A977181B674DF
+вс июл. 18 00:07:46 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:A8AD65F596760CBA96089BE09F1B2EDA
+вс июл. 18 00:08:56 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:A8AD65F596760CBA96089BE09F1B2EDA
+вс июл. 18 00:09:17 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:DB3D8470DC1A2B57B49C677069FC322B
+вс июл. 18 00:12:36 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:CCA4713EA1D379E17EBFB66D06D4787E
+вс июл. 18 00:12:44 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:8F5DA7A281CE1A732774E669D20FD09B
+вс июл. 18 00:13:56 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4242EB72D6FC17AEC97E647CCBBAB72C
+вс июл. 18 00:14:01 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:4242EB72D6FC17AEC97E647CCBBAB72C
+вс июл. 18 00:14:21 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:6956DC31E7E8E85EF31E687BEECE2111
+вс июл. 18 00:14:30 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:71E48F37FD008D2FD4790B3B1273C0D5
+вс июл. 18 00:14:32 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:71E48F37FD008D2FD4790B3B1273C0D5
+вс июл. 18 00:14:41 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:588FB045590E18C3512969D0C5F42632
+вс июл. 18 00:15:04 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:68C4552F52A3353B05C37A1EC4045331
+вс июл. 18 00:15:06 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:68C4552F52A3353B05C37A1EC4045331
+вс июл. 18 00:15:09 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:44183914431509DCA27FE20A235D37C1
+вс июл. 18 00:17:52 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:838C8072B8501641CC8124382EE1FF3E
+вс июл. 18 00:30:30 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:A41FF54E904C1795F0B027CBEAE522FE
+вс июл. 18 00:30:44 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:A41FF54E904C1795F0B027CBEAE522FE
+вс июл. 18 00:30:57 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:627CB369C51F1844234F627B8365DC7A
+вс июл. 18 00:31:31 MSK    : изменение пароля    login:12@23.ru
+вс июл. 18 00:49:08 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:6F55E7D3669EC2E833084AED475C297E
+вс июл. 18 00:51:02 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:26FDCE8C6053852A1D5C6C2395DD0336
+вс июл. 18 00:51:55 MSK    : добавлено напоминание :Тесто котя))   login: shurupin@gmail.com
+вс июл. 18 00:51:55 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:26FDCE8C6053852A1D5C6C2395DD0336
+вс июл. 18 01:11:26 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:724608D98B2132B63CB60FCE3B031C0D
+вс июл. 18 01:20:52 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:03CDDEA38D91E7AB9C1CF42EA388CCC4
+вс июл. 18 01:28:30 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:49C04E919952BA617B8E177954CAB803
+вс июл. 18 01:36:48 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:EE1CE2E9FA50E9561E97C6D0C60860C8
+вс июл. 18 01:36:51 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:EE1CE2E9FA50E9561E97C6D0C60860C8
+вс июл. 18 02:35:39 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:65F69E66CA0465BD04F05FFE433237B1
+вс июл. 18 02:37:58 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:3A6726CC1CD47E1BA44B78D9D2C2448C
+вс июл. 18 02:38:14 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:3A6726CC1CD47E1BA44B78D9D2C2448C
+вс июл. 18 02:40:31 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:BA32B472149984E3ED15EBD5A74883B5
+вс июл. 18 02:40:47 MSK    : удален  параметр   param:sada
+вс июл. 18 02:40:48 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:BA32B472149984E3ED15EBD5A74883B5
+вс июл. 18 02:40:51 MSK    : удален  параметр   param:sadafds
+вс июл. 18 02:40:51 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:BA32B472149984E3ED15EBD5A74883B5
+вс июл. 18 02:45:01 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:6D0F9E085AF2C9DB8D4A35707FE315F7
+вс июл. 18 02:45:19 MSK    : вход под пользователем (admin_jump)    login:12@23.ru
+вс июл. 18 02:45:27 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:84B19830577C5B99B65D450546AD0076
+вс июл. 18 02:45:31 MSK    : блокировка пользователя    login:12@23.ru
+вс июл. 18 02:45:31 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:84B19830577C5B99B65D450546AD0076
+вс июл. 18 02:45:32 MSK    : блокировка пользователя    login:12@23.ru
+вс июл. 18 02:45:32 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:84B19830577C5B99B65D450546AD0076
+вс июл. 18 02:45:34 MSK    : вход под пользователем (admin_jump)    login:12@23.ru
+вс июл. 18 02:45:41 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4B1ADEA0A5A6815D6411B9AFD7E6652B
+вс июл. 18 02:45:43 MSK    : блокировка пользователя    login:12@23.ru
+вс июл. 18 02:45:43 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4B1ADEA0A5A6815D6411B9AFD7E6652B
+вс июл. 18 02:45:44 MSK    : вход под пользователем (admin_jump)    login:12@23.ru
+вс июл. 18 02:45:44 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:4B1ADEA0A5A6815D6411B9AFD7E6652B
+вс июл. 18 02:46:16 MSK    : добавлено напоминание :for history   login: 12@23.ru
+вс июл. 18 02:46:16 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:4B1ADEA0A5A6815D6411B9AFD7E6652B
+вс июл. 18 02:46:35 MSK    : добавлено напоминание :for history   login: 12@23.ru
+вс июл. 18 02:46:35 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:4B1ADEA0A5A6815D6411B9AFD7E6652B
+вс июл. 18 03:27:54 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4C462D6B6D3D56AC2F60F9DEBCA5EA6C
+вс июл. 18 03:27:59 MSK    : удаление пользователя    login:12@23.ru
+вс июл. 18 03:27:59 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4C462D6B6D3D56AC2F60F9DEBCA5EA6C
+вс июл. 18 03:30:08 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:2025F94DD1F5F9EDD6C5B85717C13B4A
+вс июл. 18 03:31:28 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:E3F7854376F51EBC0D4690602FBB86F1
+вс июл. 18 03:31:46 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:8155B88E89EDDB0C793B51843B7D4196
+вс июл. 18 03:32:11 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:BF302D05349ECF59637784627B52A4BE
+вс июл. 18 03:32:15 MSK    : удаление пользователя    login:12@23.ru
+вс июл. 18 03:32:15 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:BF302D05349ECF59637784627B52A4BE
+вс июл. 18 03:35:31 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:79223E73251354425194968628D5387A
+вс июл. 18 03:35:41 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4DAB510CC3B5C83B15E103C1AA1D1AE2
+вс июл. 18 03:35:44 MSK    : удаление пользователя    login:12@23.ru
+вс июл. 18 03:35:44 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4DAB510CC3B5C83B15E103C1AA1D1AE2
+вс июл. 18 03:40:17 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:07AF7DB451679FD7C0688DAA65582411
+вс июл. 18 03:40:27 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:F8B8EF6D18BC1BA79E4692086F5EC2AF
+вс июл. 18 03:40:30 MSK    : удаление пользователя    login:12@23.ru
+вс июл. 18 03:40:30 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:F8B8EF6D18BC1BA79E4692086F5EC2AF
+вс июл. 18 03:47:18 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:F802C7343B5A49C7704F6732CF879003
+вс июл. 18 03:47:30 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:C139069EE419671DDC1C0BD585F0C44B
+вс июл. 18 03:47:34 MSK    : удаление пользователя    login:12@23.ru
+вс июл. 18 03:47:34 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:C139069EE419671DDC1C0BD585F0C44B
+вс июл. 18 17:08:33 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3D4FBECACB7A39FD8641EB2B13093D9C
