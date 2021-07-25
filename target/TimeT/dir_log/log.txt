@@ -74,3 +74,205 @@
 вс июл. 18 03:47:34 MSK    : удаление пользователя    login:12@23.ru
 вс июл. 18 03:47:34 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:C139069EE419671DDC1C0BD585F0C44B
 вс июл. 18 17:08:33 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3D4FBECACB7A39FD8641EB2B13093D9C
+ср июл. 21 02:35:32 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:08857FD2C880F2564040C74441369D36
+ср июл. 21 02:41:18 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:047D33C377D155B55967A603110E58D2
+ср июл. 21 15:01:05 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:BDF16ECF99AAC19D7627E4BAD80CC62C
+ср июл. 21 17:35:53 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:2F7BA348CF270BFAB29CD93227499883
+ср июл. 21 17:36:43 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:AA7EA83B0125A7F22857C0220DE8CEC6
+ср июл. 21 17:37:22 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:9479254D65D33110706C9C36C29C611C
+ср июл. 21 17:37:51 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:7543951030B2A6B68918CF09BC2BB195
+ср июл. 21 17:38:10 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 17:40:05 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:8B2E48E15C524495D0C207C49BAB7CE8
+ср июл. 21 17:42:19 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:520B95CC417EE24EB6BA17C40562DF60
+ср июл. 21 17:43:05 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:AA3DB9EA6F30B66D80D997B56CE7A18D
+ср июл. 21 17:43:29 MSK    : добавлено напоминание :пора работать   login: shurupin@gmail.com
+ср июл. 21 17:43:29 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:AA3DB9EA6F30B66D80D997B56CE7A18D
+ср июл. 21 17:45:22 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:1EF8F2DB8F849554A1756D19790D4D09
+ср июл. 21 17:45:39 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 17:45:57 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:5182569C36E5092CF68715EBF42C4F5E
+ср июл. 21 17:57:12 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:6EBC5385213AF40CCB8738745D9FEDA1
+ср июл. 21 17:58:39 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:52601F29FA84AB194240C1DD32FE5395
+ср июл. 21 17:58:57 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 17:59:03 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 18:00:05 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:F6E94EF0E258E1DE95B657A812727C0D
+ср июл. 21 18:00:28 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 18:00:33 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:736C0C1F22EEF20B57FE5E5B58014DB4
+ср июл. 21 18:17:27 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 18:17:53 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:BDD19682A5F36E037984E86A758F7E97
+ср июл. 21 18:37:02 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:43545EC325E5FBED990742B5E61348A7
+ср июл. 21 18:37:06 MSK    : удалено напоминание от Wed Jul 21 17:43:29 MSK 2021   login: shurupin@gmail.com
+ср июл. 21 18:37:06 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:43545EC325E5FBED990742B5E61348A7
+ср июл. 21 18:37:35 MSK    : изменение пароля    login:shurupin@gmail.com
+ср июл. 21 21:43:21 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:720FFDE58F9119022B65D1E77126BC53
+ср июл. 21 21:45:59 MSK    : добавлено напоминание :Помыть кисточки   login: O.eremina82@mail.ru
+ср июл. 21 21:46:00 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:720FFDE58F9119022B65D1E77126BC53
+ср июл. 21 21:47:03 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:D82D023DE79D75D3A517B0A5F29B56C5
+ср июл. 21 21:47:08 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+ср июл. 21 21:47:08 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:D82D023DE79D75D3A517B0A5F29B56C5
+ср июл. 21 21:48:40 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:146F2F7D0F7B178B66E1B721647642DA
+ср июл. 21 22:25:54 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:A396BA54F0985F5791A7AC10FBC38C82
+ср июл. 21 22:28:00 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:A56BD57345181B1EDD9BF692553C01F2
+ср июл. 21 22:28:33 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:43D14E5D27E724B5D8B654E104BA4E99
+ср июл. 21 22:29:38 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:B0916AF16ABCAAACFB346F0E6E340B31
+ср июл. 21 22:31:35 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:9EA9AABE8992EA40B57DD71BE46EB583
+ср июл. 21 22:34:46 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:2E82D67813339417A07CA55114445F5C
+ср июл. 21 22:35:23 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:E9A27CE34D3EDF487CDC453E77DBADA2
+ср июл. 21 22:37:38 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:AF1BEB2F17691E5D498047ED32168531
+ср июл. 21 22:39:55 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:7A47F092CAE29743A8B09A019C20DC84
+ср июл. 21 22:41:45 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:AD1106F962C5916667031D306060051B
+ср июл. 21 22:42:12 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:47DC8AFCE3704E8360A3CE5DDF760FD4
+ср июл. 21 22:42:39 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:13202D8FF7568FEB9D13212113AA6ADB
+ср июл. 21 22:42:45 MSK    : начало сессии пользователя    login:12@23.ru   SESSION_ID:1EFD7C49837A2E2F1051A447953AA4AF
+ср июл. 21 22:44:29 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:04A20D8585ED5811104C33290FA1CF93
+ср июл. 21 22:44:37 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:C5C6E24631F90288FE13EB8D493AD863
+ср июл. 21 22:45:37 MSK    : добавлено напоминание :Фися скулил 3 минуты назад   login: O.eremina82@mail.ru
+ср июл. 21 22:45:37 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:C5C6E24631F90288FE13EB8D493AD863
+ср июл. 21 23:13:55 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D9AB0A886FFCBB2C51ACC8B77E2C2485
+ср июл. 21 23:14:48 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3474CEFC6CA2B71BDD4CE2E11EAFA14E
+ср июл. 21 23:15:49 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:083A38DC68EF7F575B5566C74B4FD6D9
+ср июл. 21 23:50:34 MSK    : изменение пароля    login:shurupin@gmail.com
+чт июл. 22 20:40:14 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:FABAA33527AC6215A1D1F3E1090A0AAE
+чт июл. 22 20:43:03 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:6387A46056C1094A936891096E9F11D8
+чт июл. 22 20:43:21 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+чт июл. 22 20:43:21 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:6387A46056C1094A936891096E9F11D8
+чт июл. 22 20:49:12 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:1EBE2D3ACBD18EE1EBFAEE661A212B37
+чт июл. 22 20:49:44 MSK    : изменен параметр   param:max_sms_day
+чт июл. 22 20:49:44 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:1EBE2D3ACBD18EE1EBFAEE661A212B37
+чт июл. 22 21:09:17 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:106D5866C0723A740F67020F854AD475
+чт июл. 22 21:09:56 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:C196BB25D535B8FE72A41457AC0573DA
+чт июл. 22 21:10:28 MSK    : добавлено напоминание :Напомнить   login: shurupin@gmail.com
+чт июл. 22 21:10:28 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:C196BB25D535B8FE72A41457AC0573DA
+чт июл. 22 21:11:18 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:44C657FEAE7E96D0DAE1D19776D0F019
+чт июл. 22 21:11:25 MSK    : блокировка пользователя    login:shurupin@gmail.com
+чт июл. 22 21:11:25 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:44C657FEAE7E96D0DAE1D19776D0F019
+чт июл. 22 21:11:27 MSK    : блокировка пользователя    login:shurupin@gmail.com
+чт июл. 22 21:11:27 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:44C657FEAE7E96D0DAE1D19776D0F019
+чт июл. 22 21:12:43 MSK    : изменения лимита смс на 30 шт. в день    login:shurupin@gmail.com
+чт июл. 22 21:12:51 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+чт июл. 22 21:12:51 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:44C657FEAE7E96D0DAE1D19776D0F019
+чт июл. 22 21:13:05 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:FF006C572A2052E5B94E4C72C3FBADF9
+чт июл. 22 21:19:30 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:87A6CEFA39D0F2F3050CC24FD0DD6BF1
+чт июл. 22 22:02:12 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:566413B9210EC087D06274BC5297A025
+пт июл. 23 14:39:33 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:613F3E8732E2BC54E81456AAC26E406B
+пт июл. 23 14:39:35 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+пт июл. 23 14:39:35 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:613F3E8732E2BC54E81456AAC26E406B
+пт июл. 23 14:40:44 MSK    : добавлено напоминание :проверка программы   login: O.eremina82@mail.ru
+пт июл. 23 14:40:44 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:613F3E8732E2BC54E81456AAC26E406B
+пт июл. 23 19:00:13 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4CC7500DE0A225A37038D571C407CA6D
+пт июл. 23 19:00:25 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+пт июл. 23 19:00:25 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:4CC7500DE0A225A37038D571C407CA6D
+пт июл. 23 19:01:08 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:0B22D2EC9C09A33156FE512C5F3E28E7
+пт июл. 23 19:01:11 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+пт июл. 23 19:01:11 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:0B22D2EC9C09A33156FE512C5F3E28E7
+сб июл. 24 01:38:03 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:7E46EAEFD708D755862863A6ED525DFF
+сб июл. 24 01:38:11 MSK    : изменения лимита смс на 1 шт. в день    login:shurupin@gmail.com
+сб июл. 24 01:38:26 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 01:38:26 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:7E46EAEFD708D755862863A6ED525DFF
+сб июл. 24 01:38:39 MSK    : добавлено напоминание :тест    login: shurupin@gmail.com
+сб июл. 24 01:38:46 MSK    : добавлено напоминание :тест    login: shurupin@gmail.com
+сб июл. 24 01:42:27 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:70015C0A49BD70AA7D5F2B497BD1664A
+сб июл. 24 01:42:34 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 01:42:34 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:70015C0A49BD70AA7D5F2B497BD1664A
+сб июл. 24 01:42:44 MSK    : удалено напоминание от Sat Jul 24 01:38:39 MSK 2021   login: shurupin@gmail.com
+сб июл. 24 01:42:44 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:70015C0A49BD70AA7D5F2B497BD1664A
+сб июл. 24 01:43:02 MSK    : добавлено напоминание :тест   login: shurupin@gmail.com
+сб июл. 24 01:43:02 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:70015C0A49BD70AA7D5F2B497BD1664A
+сб июл. 24 01:43:21 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:22C81026C97CD327D794A2F2635FF4AC
+сб июл. 24 01:43:46 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 01:43:46 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:22C81026C97CD327D794A2F2635FF4AC
+сб июл. 24 01:44:34 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:F15B3089E10E5E7E2EF77C8CE028ABCA
+сб июл. 24 01:46:30 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:83051D128C3DFE4CCCC6FC73F7BB7D3D
+сб июл. 24 01:46:37 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:68DDEF694140C97FAFA987796A1A2D86
+сб июл. 24 01:47:01 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:932B803E5078B7D69AA3BAFC7839AD99
+сб июл. 24 01:48:38 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:660F12307840C128A45987DC256262C4
+сб июл. 24 01:50:51 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:A11321807D95D8D47CD1A2F65B3CF754
+сб июл. 24 01:52:27 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:36A8C18D53CA13BBAAF5F7E5C4777EFD
+сб июл. 24 01:52:31 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:8158966653EC1E4C0FEA585BF57F4FA0
+сб июл. 24 01:53:03 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:7AFF75BFA3F6AC746739A7FA9E6453C0
+сб июл. 24 01:53:32 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:68F768CA0E8B8E1663772F75C556990A
+сб июл. 24 01:54:37 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:DC75B7E30ED3AA8BE4A0691F6315869D
+сб июл. 24 01:54:43 MSK    : удалено напоминание от Sat Jul 24 01:43:02 MSK 2021   login: shurupin@gmail.com
+сб июл. 24 01:54:43 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:DC75B7E30ED3AA8BE4A0691F6315869D
+сб июл. 24 01:55:10 MSK    : добавлено напоминание :орпорп   login: shurupin@gmail.com
+сб июл. 24 01:55:10 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:DC75B7E30ED3AA8BE4A0691F6315869D
+сб июл. 24 01:57:10 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:DC75B7E30ED3AA8BE4A0691F6315869D
+сб июл. 24 01:59:58 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:00:13 MSK    : добавлено напоминание :rewt   login: shurupin@gmail.com
+сб июл. 24 02:00:13 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:01:16 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:01:24 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:02:25 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:EDC04EF79569F253EE7407C2213F7C5A
+сб июл. 24 02:02:43 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+сб июл. 24 02:02:43 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:EDC04EF79569F253EE7407C2213F7C5A
+сб июл. 24 02:03:10 MSK    : добавлено напоминание :взять камень   login: O.eremina82@mail.ru
+сб июл. 24 02:03:11 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:EDC04EF79569F253EE7407C2213F7C5A
+сб июл. 24 02:04:26 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:3AF079CB667C29D957E769528197EF99
+сб июл. 24 02:04:28 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 02:04:28 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3AF079CB667C29D957E769528197EF99
+сб июл. 24 02:05:10 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:06:43 MSK    : добавлено напоминание :прпр   login: shurupin@gmail.com
+сб июл. 24 02:06:43 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:15:29 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:75F68BF5EACFB74AFB16D7B9CA00D950
+сб июл. 24 02:30:00 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4120A4D3D7AAC634B74EE1CA07BBD6A7
+сб июл. 24 02:30:06 MSK    : изменен параметр   param:max_sms_day
+сб июл. 24 02:30:06 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:4120A4D3D7AAC634B74EE1CA07BBD6A7
+сб июл. 24 02:30:48 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:31:00 MSK    : добавлено напоминание :4444   login: shurupin@gmail.com
+сб июл. 24 02:31:00 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:31:13 MSK    : добавлено напоминание :4444   login: shurupin@gmail.com
+сб июл. 24 02:31:13 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:32:08 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:32:14 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:32:41 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:34:06 MSK    : добавлено напоминание :4444   login: shurupin@gmail.com
+сб июл. 24 02:34:06 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:114FDB70416411F064E6EF7B8B2EA842
+сб июл. 24 02:35:39 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3DBF50CF7FD8E83B89CA3799DEB14D0C
+сб июл. 24 02:35:44 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D450DDEEF196191A69E68E4AFE991309
+сб июл. 24 02:35:56 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3D06162CCD65B56A162EDE94462AD8C6
+сб июл. 24 02:36:01 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:BF5294CEF833944DE71AFEF6C3277B0E
+сб июл. 24 02:36:14 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:18D16B797F9033AA59F31ADB57CED829
+сб июл. 24 02:36:35 MSK    : добавлено напоминание :4444   login: shurupin@gmail.com
+сб июл. 24 02:36:35 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D450DDEEF196191A69E68E4AFE991309
+сб июл. 24 02:38:11 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D450DDEEF196191A69E68E4AFE991309
+сб июл. 24 02:39:34 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D450DDEEF196191A69E68E4AFE991309
+сб июл. 24 02:43:02 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:19009148DEF25C1AE87A1EB5F8FF6940
+сб июл. 24 02:43:06 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+сб июл. 24 02:43:07 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:19009148DEF25C1AE87A1EB5F8FF6940
+сб июл. 24 02:43:58 MSK    : добавлено напоминание :взять камень   login: O.eremina82@mail.ru
+сб июл. 24 02:43:58 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:19009148DEF25C1AE87A1EB5F8FF6940
+сб июл. 24 02:45:26 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:7A3EA35143FD59CFCA279C98959B9638
+сб июл. 24 02:45:31 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+сб июл. 24 02:45:31 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:7A3EA35143FD59CFCA279C98959B9638
+сб июл. 24 02:46:00 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:07F0C0BC9957DF9185F94631A40CA5C9
+сб июл. 24 02:46:08 MSK    : изменен параметр   param:max_sms_day
+сб июл. 24 02:46:08 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:07F0C0BC9957DF9185F94631A40CA5C9
+сб июл. 24 02:46:14 MSK    : удален  параметр   param:testf
+сб июл. 24 02:46:14 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:07F0C0BC9957DF9185F94631A40CA5C9
+сб июл. 24 02:48:26 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3D3D8FED67C939B18FEFDAF9945C49A8
+сб июл. 24 02:48:39 MSK    : добавлено напоминание :4444   login: shurupin@gmail.com
+сб июл. 24 02:48:39 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:3D3D8FED67C939B18FEFDAF9945C49A8
+сб июл. 24 03:00:04 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:051B6E85819891363EE877E7DF3F7F50
+сб июл. 24 03:07:32 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:F498AF0388A7D1CF9AB790BEA79D3126
+сб июл. 24 03:07:37 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 03:07:37 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:F498AF0388A7D1CF9AB790BEA79D3126
+сб июл. 24 03:07:46 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:F17E4523C8F5D43B26C69049BA502276
+сб июл. 24 03:07:51 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:D91035C4491502D729404BA5DA6EFBD6
+сб июл. 24 03:07:54 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 03:07:54 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D91035C4491502D729404BA5DA6EFBD6
+сб июл. 24 03:08:05 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:2BE8634DC58BDDC5814DF36BDF370C0A
+сб июл. 24 03:08:13 MSK    : изменения лимита смс на 1000 шт. в день    login:shurupin@gmail.com
+сб июл. 24 03:08:33 MSK    : удаление пользователя    login:12@23.ru
+сб июл. 24 03:08:33 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:2BE8634DC58BDDC5814DF36BDF370C0A
+сб июл. 24 03:16:28 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:77BBF73283D2BE031D613BE0D8157E7E
+сб июл. 24 04:04:19 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:76C3D791A885E50D5424CE58C1CA4E8B
+сб июл. 24 04:04:23 MSK    : вход под пользователем (admin_jump)    login:O.eremina82@mail.ru
+сб июл. 24 04:04:23 MSK    : начало сессии пользователя    login:O.eremina82@mail.ru   SESSION_ID:76C3D791A885E50D5424CE58C1CA4E8B
+сб июл. 24 13:30:02 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:A88185283AE8E49BF0133820A801D450
+сб июл. 24 13:30:05 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:888D61E78C9666A557F78D29ADFE1C70
+сб июл. 24 13:30:29 MSK    : добавлено напоминание :запись в историю   login: shurupin@gmail.com
+сб июл. 24 13:30:29 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:888D61E78C9666A557F78D29ADFE1C70
+сб июл. 24 13:32:31 MSK    : начало сессии администратора  login:admin@gmail.com   SESSION_ID:C3E55E55F5959D7CA3C5B1729A1D0273
+сб июл. 24 13:32:35 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
+сб июл. 24 13:32:35 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:C3E55E55F5959D7CA3C5B1729A1D0273
+сб июл. 24 15:59:00 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:718038E3B29FE5FFA9035D6FA225B161
+вс июл. 25 16:21:38 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D69B8F4B827171CAFD0AFC5EECCE3F47

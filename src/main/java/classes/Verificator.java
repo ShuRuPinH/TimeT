@@ -20,7 +20,8 @@ import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 @WebServlet("/verif")
 public class Verificator extends HttpServlet {
 
-    static String HOST = "http://localhost:8888/";
+    //static String HOST = "http://localhost:8888/";
+    static String HOST = "https://shurupin.mircloud.ru/";
 
     private static ConcurrentMap<String, String> valList = new ConcurrentSkipListMap();
 

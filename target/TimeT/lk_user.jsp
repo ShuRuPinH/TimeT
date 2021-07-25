@@ -16,7 +16,10 @@
             ${user}
             <input hidden id="usrl" name="user" value="${user}">
             <hr>
-            <p class="lead text-primary">В нужный момент вам придет СМС с вашим текстом,
+            <a style="color: darkorange" href="/verif?mode=new&login=${user}">Изменить пароль,</a> <br> придет письмо на емейл
+            со ссылкой для изменения.
+            <hr>
+            <p class="d-none d-sm-none d-md-block lead text-primary">В нужный момент вам придет СМС с вашим текстом,
                 можно задать некоторое кол-во повторов, через нужный интервал.
                 * Только на номера России. </p>
         </div>
@@ -29,31 +32,31 @@
     <div class="contentContainer">
         <div style="background-color: deepskyblue; margin-bottom: 0px" class="row">
 
-            <h3 style="text-align: center; color: white" class="">Добавить напоминание</h3>
+            <h3 style="text-align: center; color: white" class="d-none d-sm-none d-md-block">Добавить напоминание</h3>
 
         </div>
         <div style="background-color: grey; margin-bottom: 10px" class="row">
             <div class="col-md-2">
-                <h5 style="color: white" class="">Дата и время</h5>
+                <h5 style="color: white" class="d-none d-sm-none d-md-block">Дата и время</h5>
 
             </div>
             <div class="col-md-2">
-                <h5 style="color: white" class="">Номер телефона</h5>
+                <h5 style="color: white" class="d-none d-sm-none d-md-block">Номер телефона</h5>
 
             </div>
             <div class="col-md-4">
-                <h5 style="color: white" class="">Текст</h5>
+                <h5 style="color: white" class="d-none d-sm-none d-md-block">Текст</h5>
             </div>
             <div class="col-md-2">
-                <h5 style="color: white" class="">Повторы</h5>
+                <h5 style="color: white" class="d-none d-sm-none d-md-block">Повторы</h5>
             </div>
             <div class="col-md-2">
-                <h5 style="color: white" class="">Интервал</h5>
+                <h5 style="color: white" class="d-none d-sm-none d-md-block">Интервал</h5>
             </div>
         </div>
         <div style="margin-bottom: 10px" class="row">
             <div class="col-md-2">
-                <h5 class=""><input class="form-control" id="datetime" name="datetime" required type="datetime-local">
+                <h5 class=""><input placeholder="дата и время" class="form-control" id="datetime" name="datetime" required type="datetime-local">
                 </h5>
 
             </div>
@@ -78,27 +81,27 @@
             </div>
         </div>
 
-        <div style="background-color: deepskyblue; margin-bottom: 1px" class="row">
-            <div class="col-md-2">
+        <div style="background-color: deepskyblue; margin-bottom: 1px" class=" row">
+            <div class="col-md-2 d-none d-sm-none d-md-block">
                 <p style="color: gray" class="">Время МСК (GMT+3)<br>
 
                     YYYY-MM-DD'T'HH:MM (2021-05-20T15:28)</p>
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 d-none d-sm-none d-md-block">
                 <p style="color: gray" class="">Формат: 8 777 1234567<br>
                     Только по России, начинать с '8'</p>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-none d-sm-none d-md-block">
                 <p style="color: gray" class="">СМС может уместить до 70 знаков на кириллице или до 160 знаков на
                     латинице</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 d-none d-sm-none d-md-block">
                 <span style="font-size: smaller; color: yellow" class="">необязательное</span>
                 <p style="color: gray" class="">Столько раз, но не более 10</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 d-none d-sm-none d-md-block">
                 <span style="font-size: smaller; color: yellow" class="">необязательное</span>
                 <p style="color: gray" class="">через столько минут</p>
             </div>
@@ -119,20 +122,20 @@
     </div>
     <div style="background-color: grey; margin-bottom: 4px" class="row">
         <div class="col-md-3">
-            <h4 style="color: white" class="">Дата и время </h4>
+            <h4 style="color: white" class="d-none d-sm-none d-md-block">Дата и время </h4>
 
         </div>
         <div class="col-md-1">
-            <h4 style="color: white" class="">Телефон</h4>
+            <h4 style="color: white" class="d-none d-sm-none d-md-block">Телефон</h4>
         </div>
         <div class="col-md-3">
-            <h4 style="color: white" class="">Текст </h4>
+            <h4 style="color: white" class="d-none d-sm-none d-md-block">Текст </h4>
         </div>
         <div class="col-md-2">
-            <h4 style="color: white" class="">Повторы</h4>
+            <h4 style="color: white" class="d-none d-sm-none d-md-block">Повторы</h4>
         </div>
         <div class="col-md-2">
-            <h4 style="color: white" class="">Интервал</h4>
+            <h4 style="color: white" class="d-none d-sm-none d-md-block">Интервал</h4>
         </div>
         <div class="col-md-1">
             <h6 class=""></h6>

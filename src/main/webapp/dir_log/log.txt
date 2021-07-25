@@ -275,3 +275,4 @@
 сб июл. 24 13:32:35 MSK    : вход под пользователем (admin_jump)    login:shurupin@gmail.com
 сб июл. 24 13:32:35 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:C3E55E55F5959D7CA3C5B1729A1D0273
 сб июл. 24 15:59:00 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:718038E3B29FE5FFA9035D6FA225B161
+вс июл. 25 16:21:38 MSK    : начало сессии пользователя    login:shurupin@gmail.com   SESSION_ID:D69B8F4B827171CAFD0AFC5EECCE3F47
