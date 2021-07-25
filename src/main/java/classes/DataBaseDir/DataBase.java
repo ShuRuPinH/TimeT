@@ -1,5 +1,6 @@
 package classes.DataBaseDir;
 
+import classes.filters.Check;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.util.*;
 public enum DataBase {
     INSTANCE;
 
-    public final static String DB_PATH = "/consult_db/";
+    public final static String DB_PATH = Check.getRealPath()+"/consult_db/";
 
     public Users users = new Users();
     public Settings settings = new Settings();

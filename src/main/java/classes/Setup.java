@@ -24,8 +24,36 @@ public class Setup extends HttpServlet {
         realPath=realPath1;
         try {
             Files.createDirectory(Path.of(realPath1+"/dir_log")); //todo all system folders
+                   } catch (IOException e) {
+
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            err=errors.toString();
+        }
+
+
+        try {
+
             Files.createDirectory(Path.of(realPath1+"/history"));
+
+        } catch (IOException e) {
+
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            err=errors.toString();
+        }
+        try {
+
             Files.createDirectory(Path.of(realPath1+"/archive"));
+
+        } catch (IOException e) {
+
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            err=errors.toString();
+        }
+        try {
+
             Files.createDirectory(Path.of(realPath1+"/consult_db"));
         } catch (IOException e) {
 
