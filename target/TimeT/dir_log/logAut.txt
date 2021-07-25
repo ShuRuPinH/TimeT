@@ -183,3 +183,7 @@
 сб июл. 24 13:32:31 MSK    : авторизован администратор  login: admin@gmail.com
 сб июл. 24 15:59:00 MSK    : авторизован пользователь   login: shurupin@gmail.com
 вс июл. 25 16:21:38 MSK    : авторизован пользователь   login: shurupin@gmail.com
+вс июл. 25 17:03:14 MSK    : авторизован пользователь   login: shurupin@gmail.com
+вс июл. 25 17:03:46 MSK    : авторизован пользователь   login: shurupin@gmail.com
+вс июл. 25 17:06:26 MSK    : не найден пользователь     login: shurupin@gmail.com
+вс июл. 25 17:06:36 MSK    : создан новый пользователь     :shurupin@gmail.com

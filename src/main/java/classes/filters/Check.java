@@ -19,7 +19,7 @@ import static classes.core.SMScore.INSTANCE_CORE;
 
 
 public class Check extends HttpServlet {
-    static String realPath;
+    static String realPath="";
 
     @Override
     public void init() throws ServletException {
@@ -91,7 +91,7 @@ public class Check extends HttpServlet {
             DataBase.Users.User temp = INSTANCE.users.findKey(em);
             if (temp == null) {
 
-                INSTANCE_LOG.logAutWrite("не найден пользователь     login: " + temp.login);
+                INSTANCE_LOG.logAutWrite("не найден пользователь     login: " + request.getParameter("email") );
                 authErr(request, response);
             } else {
                 session.invalidate();
