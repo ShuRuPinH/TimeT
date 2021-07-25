@@ -21,7 +21,7 @@ import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 public class Verificator extends HttpServlet {
 
     //static String HOST = "http://localhost:8888/";
-    static String HOST = "https://timet.mircloud.ru/";
+    static String HOST = "http://timet.mircloud.ru/";
 
     private static ConcurrentMap<String, String> valList = new ConcurrentSkipListMap();
 
@@ -64,7 +64,7 @@ public class Verificator extends HttpServlet {
         valList.put(email, val);
         String href = null;
 
-        href = HOST + "/verif" + "?mode=rec&login=" + email + "&value=" + val;
+        href = HOST + "verif" + "?mode=rec&login=" + email + "&value=" + val;
 
 
         String mail = "<p>&nbsp;</p>\n" +
