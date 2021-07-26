@@ -32,8 +32,8 @@ public class EditNotes extends HttpServlet {
 
 
         } else {
-            String val = request.getParameter("mess");
-            System.out.println(val);
+
+            System.out.println(" ==== EDIT notes ====  req/datetime = "+request.getParameter("datetime"));
 
             DataBase.Notes.Value temp = NoteBuilder.build(request.getParameter("user"), request.getParameter("phone"), request.getParameter("mess"),
                     request.getParameter("datetime"), request.getParameter("reps"), request.getParameter("intr"));

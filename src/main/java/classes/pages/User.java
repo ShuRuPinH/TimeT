@@ -12,8 +12,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
+
 import java.util.List;
 
 import static classes.DataBaseDir.DataBase.INSTANCE;
@@ -22,6 +25,7 @@ import static classes.DataBaseDir.Loger.INSTANCE_LOG;
 public class User extends HttpServlet {
 
     List<String> listSessions = new ArrayList<>();
+    static DateTimeFormatter dateF = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss 'MSK'");
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -37,7 +41,7 @@ public class User extends HttpServlet {
             INSTANCE.users.getUser(user).sessions.add(session.getCreationTime());
 
             String enter = session.getAttribute("axe") != null ? "admin_jump" : "user_login";
-            String report = (new Date(session.getCreationTime())).toString().substring(0, 22) + " ses.ID: " + (session.getId()).substring(0, 7) + "...  mode:" + enter;
+            String report = Instant.now().atZone(ZoneId.of("Europe/Moscow")).format(dateF) + " ses.ID: " + (session.getId()).substring(0, 7) + "...  mode:" + enter;
 
             System.out.println("--user-= " + user);
             Files.writeString(Path.of(getServletContext().getRealPath("/") + "/history/" + user.replace(".", "_") + ".ses"),

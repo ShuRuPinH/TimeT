@@ -2,6 +2,7 @@ package classes.DataBaseDir;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -12,18 +13,18 @@ public class NoteBuilder {
 
     static DataBase.Notes.Value note;
     static DateTimeFormatter dtf =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm"); // 2021-05-05T20:05
+            DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSZ"); // 2021-05-05T20:05
 
     //public Value(String user,String number, String message, LocalDateTime start, int repeats, double interval)
     public static DataBase.Notes.Value build(String user, String number, String message, String start, String repeats, String interval) {
         Integer reps;
         Double interv;
-        Date date;
+        ZonedDateTime date;
         long startt = 0;
         try {
-            date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm").parse(start);
-            startt = date.getTime();
-        } catch (ParseException e) {
+            date = ZonedDateTime.parse (start+":00.000+0300",dtf);
+            startt = date.toInstant().toEpochMilli();
+        } catch (Exception e) {
             e.printStackTrace();
         }
         if (repeats == "") repeats = "0";

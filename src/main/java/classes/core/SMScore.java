@@ -47,7 +47,7 @@ public enum SMScore {
         if ((count++) % 6 == 0) getSchedule();
         long now = Instant.now().atZone(ZoneId.of("Europe/Moscow")).toInstant().toEpochMilli();
         List<Long> clearList = new ArrayList<>();
-        System.out.println("schedule.size = " + schedule.size());
+        System.out.print("ss=" + schedule.size()+" ");
         for (Map.Entry<Long, String[]> nt : schedule.entrySet()) {
             if ((now + 5_000) > nt.getKey()) {
                 String[] utm = nt.getValue();

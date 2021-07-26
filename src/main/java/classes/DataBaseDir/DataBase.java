@@ -1,9 +1,10 @@
 package classes.DataBaseDir;
 
-import classes.filters.Check;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
+import java.time.Instant;
+import java.time.ZoneId;
 import java.util.*;
 
 public enum DataBase {
@@ -223,7 +224,7 @@ public enum DataBase {
                 this.start = start;
                 this.repeats = repeats;
                 this.interval = interval;
-                create = new Date().getTime();
+                create = Instant.now().atZone(ZoneId.of("Europe/Moscow")).toInstant().toEpochMilli();
             }
 
             public String getUser() {

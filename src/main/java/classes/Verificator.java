@@ -3,11 +3,13 @@ package classes;
 import classes.DataBaseDir.IDbTable;
 import classes.core.Emailer;
 
+import javax.mail.Session;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Date;
 import java.util.concurrent.ConcurrentMap;
@@ -24,6 +26,8 @@ public class Verificator extends HttpServlet {
     static String HOST = "http://timet.mircloud.ru/";
 
     private static ConcurrentMap<String, String> valList = new ConcurrentSkipListMap();
+
+
 
 
     @Override
@@ -62,9 +66,7 @@ public class Verificator extends HttpServlet {
 
         String val = IDbTable.hashSha256(new Date() + email + Math.random());
         valList.put(email, val);
-        String href = null;
-
-        href = HOST + "verif" + "?mode=rec&login=" + email + "&value=" + val;
+        String href = HOST + "verif" + "?mode=rec&login=" + email + "&value=" + val;
 
 
         String mail = "<p>&nbsp;</p>\n" +
@@ -87,13 +89,16 @@ public class Verificator extends HttpServlet {
                 "</tbody>\n" +
                 "</table>\n" +
                 "</div>";
+        System.out.println(" send mail before");
 
-        Emailer.sendEmail(email, "Восcтановление пароля", mail);
+        Emailer.sendEmail(email, "Восcтановление пароля", mail );
+
+        System.out.println(" send mail after");
 
     }
 
 /// не используется
-    public static void generateVal(String email) {
+/*    public static void generateVal(String email) {
 
 
         String val = IDbTable.hashSha256(new Date() + email + Math.random());
@@ -126,7 +131,7 @@ public class Verificator extends HttpServlet {
 
         Emailer.sendEmail(email, "Подтвердите почту", mail);
 
-    }
+    }*/
 
 
 }

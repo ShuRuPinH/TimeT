@@ -187,3 +187,8 @@
 вс июл. 25 17:03:46 MSK    : авторизован пользователь   login: shurupin@gmail.com
 вс июл. 25 17:06:26 MSK    : не найден пользователь     login: shurupin@gmail.com
 вс июл. 25 17:06:36 MSK    : создан новый пользователь     :shurupin@gmail.com
+вс июл. 25 21:45:03 MSK    : не найден пользователь     login: admin@gmail.com
+вс июл. 25 21:45:11 MSK    : не найден пользователь     login: admin@gmail.com
+вс июл. 25 22:25:38 MSK    : не найден пользователь     login: admin@gmail.com
+вс июл. 25 22:25:47 MSK    : не найден пользователь     login: admin@gmail.com
+вс июл. 25 22:26:04 MSK    : не найден пользователь     login: shurupin@gmail.com
